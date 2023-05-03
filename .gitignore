@@ -1,6 +1,6 @@
 # Files specific to this repo #
 ##############################
-
+*.h5.*
 
 # Compiled source #
 ###################
@@ -32,7 +32,6 @@ __pycache__
 
 # Logs and databases #
 ######################
-*.log
 *.sql
 *.sqlite
 
