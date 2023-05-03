@@ -121,6 +121,7 @@ def make_cholla_command(executable_path, input_file, resolution, domain_length, 
             f'xlen={domain_length}',
             f'ylen={domain_length}',
             f'zlen={domain_length}',
+            f'wave_length={domain_length}',
             f'outdir={output_directory}',
         ]
     )
