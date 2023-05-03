@@ -53,7 +53,7 @@ def compute_job_parameters(num_ranks):
 
     return num_nodes, resolution, domain_length
 
-def make_sbatch_command(account, time, nodes, wrap, mail_user=None, job_name=None):
+def make_sbatch_command(account, time, nodes, output_directory, wrap, mail_user=None, job_name=None):
     """Generate the sbatch command to submit a job to the queue on Frontier
 
     Args:
@@ -74,11 +74,11 @@ def make_sbatch_command(account, time, nodes, wrap, mail_user=None, job_name=Non
         mail = ''
 
     if job_name:
-        job_name = f'--job-name={job_name}'
+        job_name_flag = f'--job-name={job_name}'
     else:
-        job_name = ''
+        job_name_flag = ''
 
-    return f"sbatch --account={account} --nodes={nodes} --time={time} {mail} {job_name} --wrap='{wrap}'"
+    return f"sbatch --account={account} --nodes={nodes} --time={time} {mail} {job_name_flag} --output={output_directory}/slurm-{job_name}.out --wrap='{wrap}'"
 
 def make_srun_command(num_nodes, num_ranks):
     """Generate the srun command to launch Cholla
@@ -122,11 +122,11 @@ def make_cholla_command(executable_path, input_file, resolution, domain_length, 
             f'ylen={domain_length}',
             f'zlen={domain_length}',
             f'wave_length={domain_length}',
-            f'outdir={output_directory}',
+            f'outdir={str(output_directory) + os.sep}',
         ]
     )
 
-    return command
+    return command, output_directory
 
 def submit_job(account, time, num_ranks, executable_path, input_file, scaling_test_directory, job_name=None, mail_user=None, submit=False):
 
@@ -134,9 +134,12 @@ def submit_job(account, time, num_ranks, executable_path, input_file, scaling_te
 
     srun_command = make_srun_command(num_nodes, num_ranks)
 
-    cholla_command = make_cholla_command(executable_path, input_file, resolution, domain_length, num_ranks, scaling_test_directory)
+    cholla_command, output_directory = make_cholla_command(executable_path, input_file, resolution, domain_length, num_ranks, scaling_test_directory)
 
-    sbatch_command = make_sbatch_command(account, time, num_nodes, srun_command + cholla_command, mail_user, job_name)
+    # cd into the correct directory so that cholla output files go there
+    cd_command = f'cd {output_directory}; '
+
+    sbatch_command = make_sbatch_command(account, time, num_nodes, output_directory, cd_command + srun_command + cholla_command, mail_user, job_name)
 
     print('The sbatch command is:\n', sbatch_command)
 
