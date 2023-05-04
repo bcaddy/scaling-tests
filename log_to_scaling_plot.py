@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sys, os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -29,7 +30,7 @@ def filename_to_table(filename):
     data = np.loadtxt(filename,skiprows=3,comments=['#'])
     with open(filename,'r') as ofile:
         lines = ofile.readlines()
-        #print(lines)                                                                                                                                                                                                        
+        #print(lines)
         header = lines[3].split()
     table = {}
     for i in range(len(header)):
@@ -39,7 +40,7 @@ def filename_to_table(filename):
     return table
 
 def access(table, item):
-    # If item is a string, plot its average time                                                                                                                                                                             
+    # If item is a string, plot its average time
     if item in combos:
         total_time = 0
         for subitem in combos[item]:
@@ -94,7 +95,7 @@ ax.plot( n_procs_128_2019, t_total_128_2019, '--', c=c_total_old, alpha=0.8, mar
 
 
 
-fs = 10 
+fs = 10
 ax.text(0.85, 0.47, 'Hydro', fontsize=fs, color=c_hydro, horizontalalignment='left', verticalalignment='center', transform=ax.transAxes)
 
 ax.text(0.05, 0.4, 'MPI comm', fontsize=fs, color=c_mpi, horizontalalignment='left', verticalalignment='center', transform=ax.transAxes)
@@ -103,11 +104,11 @@ ax.text(0.05, 0.16, 'Particles', fontsize=fs, color=c_particles, horizontalalign
 
 
 
-if plot_grav_over_logN: 
+if plot_grav_over_logN:
   ax.text(0.05, 0.37, 'Poisson / log(N)', fontsize=fs, color=c_grav, horizontalalignment='left', verticalalignment='center', transform=ax.transAxes)
   ax.text(0.05, 0.72, 'Total 2023', fontsize=fs, color=c_total, horizontalalignment='left', verticalalignment='center', transform=ax.transAxes)
 
-else: 
+else:
   ax.text(0.3, 0.62, 'Poisson', fontsize=fs, color=c_grav, horizontalalignment='left', verticalalignment='center', transform=ax.transAxes)
   ax.text(0.05, 0.75, 'Total 2023', fontsize=fs, color=c_total, horizontalalignment='left', verticalalignment='center', transform=ax.transAxes)
 
@@ -128,7 +129,7 @@ ax.set_xlabel( r'Number of GPUs', fontsize=fs)
 ax.set_xscale('log')
 
 output_dir = './'
- 
+
 
 
 if plot_grav_over_logN: fileName = output_dir + 'scaling_frontier_adiabatic_2023_log_new_logN.png'
