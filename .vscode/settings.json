@@ -5,6 +5,8 @@
         "sbatch",
         "srun",
         "xlen",
+        "xlims",
+        "ylims",
         "zlen"
     ]
 }
