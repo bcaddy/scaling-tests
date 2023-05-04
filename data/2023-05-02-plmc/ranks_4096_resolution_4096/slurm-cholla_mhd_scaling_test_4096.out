@@ -1,0 +1,662 @@
+Override with nx=4096
+Override with ny=4096
+Override with nz=4096
+Override with xlen=16.0
+Override with ylen=16.0
+Override with zlen=16.0
+Override with wave_length=16.0
+Override with outdir=/lustre/orion/csc380/scratch/rcaddy/scaling-tests/data/2023-05-02-plmc/ranks_4096_resolution_4096/
+Git Commit Hash = 7f79af2bf72300ce85e8ce765339851dbc77a73c
+Macro Flags     = -DCUDA -DMPI_CHOLLA -DPRECISION=2 -DPLMC -DHLLD -DMHD -DVL -DDENSITY_FLOOR -DTEMPERATURE_FLOOR -DCPU_TIME -DOUTPUT -DHDF5 -DMPI_GPU -DO_HIP -DGIT_HASH=7f79af2bf72300ce85e8ce765339851dbc77a73c
+Parameter values:  nx = 4096, ny = 4096, nz = 4096, tout = 0.060000, init = Linear_Wave, boundaries = 1 1 1 1 1 1
+Output directory:  /lustre/orion/csc380/scratch/rcaddy/scaling-tests/data/2023-05-02-plmc/ranks_4096_resolution_4096/
+
+Creating Log File: run_output.log 
+
+nproc_x 16 nproc_y 16 nproc_z 16
+Allocating MPI communication buffers on GPU (nx = 2097152, ny = 2162688, nz = 2230272).
+Local number of grid cells: 256 256 256 18399744
+Setting initial conditions...
+Initial conditions set.
+
+Timing Functions is ON 
+Setting boundary conditions...
+Boundary conditions set.
+Dimensions of each cell: dx = 0.003906 dy = 0.003906 dz = 0.003906
+Ratio of specific heats gamma = 1.666667
+Nstep = 0  Simulation time = 0.000000
+Writing initial conditions to file...
+
+Saving Snapshot: 0 
+Global maximum magnetic divergence = 0.0000e+00
+Init  min:    7.1804  max:    8.2895  avg:    7.8793
+Starting calculations.
+ Time MHD                 min:  124.9781  max:  132.5259  avg:  129.2177   ms
+ Time Boundaries          min:    8.7001  max:   13.5021  avg:   10.4824   ms
+ Time Total               min:  146.4379  max:  147.1081  avg:  146.9311   ms
+n_step: 1   sim time:  0.0005859   sim timestep: 5.8594e-04  timestep time =   147.138 ms   total time =    8.4387 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.3340  max:  117.4500  avg:  115.1454   ms
+ Time Boundaries          min:    9.1360  max:   13.6101  avg:   10.9331   ms
+ Time Total               min:  131.4180  max:  131.4380  avg:  131.4282   ms
+n_step: 2   sim time:  0.0011719   sim timestep: 5.8594e-04  timestep time =   131.596 ms   total time =    8.5711 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.2899  max:  116.3058  avg:  114.5496   ms
+ Time Boundaries          min:    8.6732  max:   12.9709  avg:   10.4873   ms
+ Time Total               min:  129.6411  max:  129.6561  avg:  129.6488   ms
+n_step: 3   sim time:  0.0017578   sim timestep: 5.8594e-04  timestep time =   129.815 ms   total time =    8.7016 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.5019  max:  116.1089  avg:  114.6063   ms
+ Time Boundaries          min:    8.6641  max:   13.6299  avg:   10.4711   ms
+ Time Total               min:  130.0991  max:  130.1181  avg:  130.1092   ms
+n_step: 4   sim time:  0.0023437   sim timestep: 5.8594e-04  timestep time =   130.272 ms   total time =    8.8326 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.5391  max:  116.1852  avg:  114.5508   ms
+ Time Boundaries          min:    8.8320  max:   13.3739  avg:   10.6299   ms
+ Time Total               min:  129.9250  max:  129.9431  avg:  129.9328   ms
+n_step: 5   sim time:  0.0029297   sim timestep: 5.8594e-04  timestep time =   130.094 ms   total time =    8.9635 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6280  max:  116.1480  avg:  114.5887   ms
+ Time Boundaries          min:    8.7171  max:   13.2880  avg:   10.4955   ms
+ Time Total               min:  129.7951  max:  129.8220  avg:  129.8107   ms
+n_step: 6   sim time:  0.0035156   sim timestep: 5.8594e-04  timestep time =   129.968 ms   total time =    9.0942 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7222  max:  116.2341  avg:  114.6061   ms
+ Time Boundaries          min:    8.6601  max:   13.1590  avg:   10.5045   ms
+ Time Total               min:  129.7722  max:  129.7898  avg:  129.7827   ms
+n_step: 7   sim time:  0.0041016   sim timestep: 5.8594e-04  timestep time =   129.948 ms   total time =    9.2249 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7460  max:  116.1170  avg:  114.5942   ms
+ Time Boundaries          min:    8.6179  max:   13.8049  avg:   10.4304   ms
+ Time Total               min:  130.2989  max:  130.3160  avg:  130.3085   ms
+n_step: 8   sim time:  0.0046875   sim timestep: 5.8594e-04  timestep time =   130.476 ms   total time =    9.3561 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7119  max:  116.2529  avg:  114.6058   ms
+ Time Boundaries          min:    9.2490  max:   13.7641  avg:   11.0047   ms
+ Time Total               min:  130.4328  max:  130.4581  avg:  130.4471   ms
+n_step: 9   sim time:  0.0052734   sim timestep: 5.8594e-04  timestep time =   130.620 ms   total time =    9.4875 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7930  max:  116.0901  avg:  114.6194   ms
+ Time Boundaries          min:    9.0570  max:   13.4780  avg:   10.8685   ms
+ Time Total               min:  129.9651  max:  129.9849  avg:  129.9761   ms
+n_step: 10   sim time:  0.0058594   sim timestep: 5.8594e-04  timestep time =   130.143 ms   total time =    9.6183 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7589  max:  116.2369  avg:  114.6164   ms
+ Time Boundaries          min:    8.4820  max:   12.8801  avg:   10.3055   ms
+ Time Total               min:  129.5340  max:  129.5521  avg:  129.5448   ms
+n_step: 11   sim time:  0.0064453   sim timestep: 5.8594e-04  timestep time =   129.703 ms   total time =    9.7488 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6170  max:  116.1859  avg:  114.6540   ms
+ Time Boundaries          min:    9.1429  max:   13.6051  avg:   10.9565   ms
+ Time Total               min:  130.1510  max:  130.1711  avg:  130.1629   ms
+n_step: 12   sim time:  0.0070312   sim timestep: 5.8594e-04  timestep time =   130.325 ms   total time =    9.8799 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.9332  max:  116.3678  avg:  114.6558   ms
+ Time Boundaries          min:    8.7972  max:   13.9019  avg:   10.6190   ms
+ Time Total               min:  130.6591  max:  130.6779  avg:  130.6694   ms
+n_step: 13   sim time:  0.0076172   sim timestep: 5.8594e-04  timestep time =   130.839 ms   total time =   10.0114 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.5929  max:  116.3261  avg:  114.6410   ms
+ Time Boundaries          min:    8.9159  max:   13.9558  avg:   10.7093   ms
+ Time Total               min:  130.6760  max:  130.7020  avg:  130.6877   ms
+n_step: 14   sim time:  0.0082031   sim timestep: 5.8594e-04  timestep time =   130.859 ms   total time =   10.1431 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8941  max:  116.1180  avg:  114.6625   ms
+ Time Boundaries          min:    9.2700  max:   13.5901  avg:   11.1070   ms
+ Time Total               min:  130.0681  max:  130.0831  avg:  130.0758   ms
+n_step: 15   sim time:  0.0087891   sim timestep: 5.8594e-04  timestep time =   130.242 ms   total time =   10.2740 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8099  max:  116.3361  avg:  114.6403   ms
+ Time Boundaries          min:    9.0129  max:   13.4470  avg:   10.8212   ms
+ Time Total               min:  130.1699  max:  130.1942  avg:  130.1835   ms
+n_step: 16   sim time:  0.0093750   sim timestep: 5.8594e-04  timestep time =   130.354 ms   total time =   10.4051 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7679  max:  116.1361  avg:  114.6347   ms
+ Time Boundaries          min:    9.1829  max:   14.3380  avg:   10.9886   ms
+ Time Total               min:  130.8522  max:  130.8692  avg:  130.8605   ms
+n_step: 17   sim time:  0.0099609   sim timestep: 5.8594e-04  timestep time =   131.023 ms   total time =   10.5369 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8719  max:  116.1590  avg:  114.6470   ms
+ Time Boundaries          min:    9.3381  max:   13.8700  avg:   11.1135   ms
+ Time Total               min:  130.3890  max:  130.4100  avg:  130.4002   ms
+n_step: 18   sim time:  0.0105469   sim timestep: 5.8594e-04  timestep time =   130.571 ms   total time =   10.6682 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6828  max:  116.5009  avg:  114.6682   ms
+ Time Boundaries          min:    9.1209  max:   14.2460  avg:   10.9495   ms
+ Time Total               min:  131.0961  max:  131.1190  avg:  131.1118   ms
+n_step: 19   sim time:  0.0111328   sim timestep: 5.8594e-04  timestep time =   131.280 ms   total time =   10.8002 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7830  max:  116.5290  avg:  114.6591   ms
+ Time Boundaries          min:    9.1710  max:   14.3180  avg:   10.9692   ms
+ Time Total               min:  131.2139  max:  131.2320  avg:  131.2231   ms
+n_step: 20   sim time:  0.0117187   sim timestep: 5.8594e-04  timestep time =   131.385 ms   total time =   10.9323 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7710  max:  116.2660  avg:  114.6885   ms
+ Time Boundaries          min:    8.9450  max:   13.4270  avg:   10.7503   ms
+ Time Total               min:  130.0540  max:  130.0781  avg:  130.0665   ms
+n_step: 21   sim time:  0.0123047   sim timestep: 5.8594e-04  timestep time =   130.233 ms   total time =   11.0633 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7551  max:  116.2038  avg:  114.7255   ms
+ Time Boundaries          min:    8.5962  max:   13.7041  avg:   10.4269   ms
+ Time Total               min:  130.2669  max:  130.2831  avg:  130.2758   ms
+n_step: 22   sim time:  0.0128906   sim timestep: 5.8594e-04  timestep time =   130.441 ms   total time =   11.1945 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8578  max:  116.3449  avg:  114.7238   ms
+ Time Boundaries          min:    9.3591  max:   13.7119  avg:   11.1223   ms
+ Time Total               min:  130.4181  max:  130.4410  avg:  130.4324   ms
+n_step: 23   sim time:  0.0134766   sim timestep: 5.8594e-04  timestep time =   130.602 ms   total time =   11.3258 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8001  max:  116.3468  avg:  114.7204   ms
+ Time Boundaries          min:    9.1469  max:   13.5579  avg:   10.9410   ms
+ Time Total               min:  130.2691  max:  130.2872  avg:  130.2788   ms
+n_step: 24   sim time:  0.0140625   sim timestep: 5.8594e-04  timestep time =   130.444 ms   total time =   11.4570 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.9200  max:  116.4570  avg:  114.6783   ms
+ Time Boundaries          min:    9.1789  max:   14.0970  avg:   11.0001   ms
+ Time Total               min:  130.9149  max:  130.9350  avg:  130.9253   ms
+n_step: 25   sim time:  0.0146484   sim timestep: 5.8594e-04  timestep time =   131.089 ms   total time =   11.5889 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  113.0302  max:  116.1711  avg:  114.6938   ms
+ Time Boundaries          min:    9.1190  max:   13.5682  avg:   10.9065   ms
+ Time Total               min:  130.1119  max:  130.1329  avg:  130.1222   ms
+n_step: 26   sim time:  0.0152344   sim timestep: 5.8594e-04  timestep time =   130.286 ms   total time =   11.7199 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6950  max:  116.1599  avg:  114.6822   ms
+ Time Boundaries          min:    9.2368  max:   13.6631  avg:   10.9964   ms
+ Time Total               min:  130.1799  max:  130.2021  avg:  130.1908   ms
+n_step: 27   sim time:  0.0158203   sim timestep: 5.8594e-04  timestep time =   130.361 ms   total time =   11.8510 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6940  max:  116.1492  avg:  114.6752   ms
+ Time Boundaries          min:    9.3319  max:   13.7501  avg:   11.0984   ms
+ Time Total               min:  130.2710  max:  130.2941  avg:  130.2825   ms
+n_step: 28   sim time:  0.0164062   sim timestep: 5.8594e-04  timestep time =   130.458 ms   total time =   11.9822 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8640  max:  116.1959  avg:  114.6850   ms
+ Time Boundaries          min:    9.2211  max:   14.3099  avg:   11.0331   ms
+ Time Total               min:  130.8708  max:  130.8861  avg:  130.8783   ms
+n_step: 29   sim time:  0.0169922   sim timestep: 5.8594e-04  timestep time =   131.044 ms   total time =   12.1140 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8080  max:  116.1270  avg:  114.6599   ms
+ Time Boundaries          min:    9.1500  max:   14.0650  avg:   10.9575   ms
+ Time Total               min:  130.5571  max:  130.5771  avg:  130.5670   ms
+n_step: 30   sim time:  0.0175781   sim timestep: 5.8594e-04  timestep time =   130.736 ms   total time =   12.2454 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8330  max:  116.3039  avg:  114.6768   ms
+ Time Boundaries          min:    8.8921  max:   13.2270  avg:   10.6642   ms
+ Time Total               min:  129.8978  max:  129.9160  avg:  129.9067   ms
+n_step: 31   sim time:  0.0181640   sim timestep: 5.8594e-04  timestep time =   130.069 ms   total time =   12.3763 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8678  max:  116.1330  avg:  114.6594   ms
+ Time Boundaries          min:    9.1419  max:   13.5400  avg:   10.9410   ms
+ Time Total               min:  130.0261  max:  130.0490  avg:  130.0399   ms
+n_step: 32   sim time:  0.0187500   sim timestep: 5.8594e-04  timestep time =   130.207 ms   total time =   12.5072 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8631  max:  116.2670  avg:  114.6369   ms
+ Time Boundaries          min:    9.0630  max:   13.5589  avg:   10.8690   ms
+ Time Total               min:  130.1930  max:  130.2142  avg:  130.2054   ms
+n_step: 33   sim time:  0.0193359   sim timestep: 5.8594e-04  timestep time =   130.372 ms   total time =   12.6383 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6699  max:  116.2701  avg:  114.6722   ms
+ Time Boundaries          min:    9.2242  max:   13.7169  avg:   11.0105   ms
+ Time Total               min:  130.3420  max:  130.3630  avg:  130.3542   ms
+n_step: 34   sim time:  0.0199219   sim timestep: 5.8594e-04  timestep time =   130.517 ms   total time =   12.7696 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8190  max:  116.4200  avg:  114.6509   ms
+ Time Boundaries          min:    9.2218  max:   13.7110  avg:   10.9882   ms
+ Time Total               min:  130.4901  max:  130.5170  avg:  130.5034   ms
+n_step: 35   sim time:  0.0205078   sim timestep: 5.8594e-04  timestep time =   130.669 ms   total time =   12.9010 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6080  max:  116.1978  avg:  114.6489   ms
+ Time Boundaries          min:    8.5959  max:   13.5372  avg:   10.4073   ms
+ Time Total               min:  130.0960  max:  130.1110  avg:  130.1027   ms
+n_step: 36   sim time:  0.0210937   sim timestep: 5.8594e-04  timestep time =   130.274 ms   total time =   13.0320 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8461  max:  116.5249  avg:  114.6446   ms
+ Time Boundaries          min:    9.2289  max:   14.3199  avg:   11.0113   ms
+ Time Total               min:  131.2151  max:  131.2301  avg:  131.2228   ms
+n_step: 37   sim time:  0.0216797   sim timestep: 5.8594e-04  timestep time =   131.386 ms   total time =   13.1641 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6778  max:  116.1759  avg:  114.6324   ms
+ Time Boundaries          min:    9.1729  max:   14.0691  avg:   10.9565   ms
+ Time Total               min:  130.6031  max:  130.6250  avg:  130.6139   ms
+n_step: 38   sim time:  0.0222656   sim timestep: 5.8594e-04  timestep time =   130.783 ms   total time =   13.2957 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8290  max:  116.3409  avg:  114.6110   ms
+ Time Boundaries          min:    9.2320  max:   13.7012  avg:   11.0482   ms
+ Time Total               min:  130.3980  max:  130.4209  avg:  130.4095   ms
+n_step: 39   sim time:  0.0228515   sim timestep: 5.8594e-04  timestep time =   130.575 ms   total time =   13.4270 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.5760  max:  116.3089  avg:  114.6455   ms
+ Time Boundaries          min:    9.0210  max:   14.1752  avg:   10.8127   ms
+ Time Total               min:  130.8420  max:  130.8620  avg:  130.8532   ms
+n_step: 40   sim time:  0.0234375   sim timestep: 5.8594e-04  timestep time =   131.013 ms   total time =   13.5587 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8080  max:  116.1129  avg:  114.6309   ms
+ Time Boundaries          min:    8.7399  max:   13.2699  avg:   10.5377   ms
+ Time Total               min:  129.7419  max:  129.7612  avg:  129.7529   ms
+n_step: 41   sim time:  0.0240234   sim timestep: 5.8594e-04  timestep time =   129.918 ms   total time =   13.6894 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.9260  max:  116.5130  avg:  114.6801   ms
+ Time Boundaries          min:    9.1360  max:   13.6039  avg:   10.9225   ms
+ Time Total               min:  130.4770  max:  130.4951  avg:  130.4870   ms
+n_step: 42   sim time:  0.0246094   sim timestep: 5.8594e-04  timestep time =   130.653 ms   total time =   13.8208 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8640  max:  116.2570  avg:  114.6643   ms
+ Time Boundaries          min:    8.6880  max:   13.1328  avg:   10.5107   ms
+ Time Total               min:  129.7538  max:  129.7710  avg:  129.7615   ms
+n_step: 43   sim time:  0.0251953   sim timestep: 5.8594e-04  timestep time =   129.931 ms   total time =   13.9515 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8330  max:  116.2989  avg:  114.6598   ms
+ Time Boundaries          min:    9.1510  max:   13.6940  avg:   10.9092   ms
+ Time Total               min:  130.3499  max:  130.3682  avg:  130.3600   ms
+n_step: 44   sim time:  0.0257812   sim timestep: 5.8594e-04  timestep time =   130.532 ms   total time =   14.0827 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7450  max:  116.3039  avg:  114.6878   ms
+ Time Boundaries          min:    8.6141  max:   13.1140  avg:   10.4309   ms
+ Time Total               min:  129.7801  max:  129.8001  avg:  129.7902   ms
+n_step: 45   sim time:  0.0263672   sim timestep: 5.8594e-04  timestep time =   129.959 ms   total time =   14.2134 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7760  max:  116.2159  avg:  114.6634   ms
+ Time Boundaries          min:    9.1631  max:   13.6960  avg:   10.9629   ms
+ Time Total               min:  130.2781  max:  130.2960  avg:  130.2866   ms
+n_step: 46   sim time:  0.0269531   sim timestep: 5.8594e-04  timestep time =   130.452 ms   total time =   14.3446 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7689  max:  116.3428  avg:  114.6901   ms
+ Time Boundaries          min:    9.3389  max:   13.8841  avg:   11.1120   ms
+ Time Total               min:  130.5900  max:  130.6090  avg:  130.5996   ms
+n_step: 47   sim time:  0.0275390   sim timestep: 5.8594e-04  timestep time =   130.764 ms   total time =   14.4761 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7059  max:  116.3759  avg:  114.6457   ms
+ Time Boundaries          min:    8.5399  max:   13.7460  avg:   10.3507   ms
+ Time Total               min:  130.4841  max:  130.5051  avg:  130.4945   ms
+n_step: 48   sim time:  0.0281250   sim timestep: 5.8594e-04  timestep time =   130.662 ms   total time =   14.6075 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7050  max:  116.5950  avg:  114.6758   ms
+ Time Boundaries          min:    9.2320  max:   14.2689  avg:   11.0181   ms
+ Time Total               min:  131.2311  max:  131.2492  avg:  131.2411   ms
+n_step: 49   sim time:  0.0287109   sim timestep: 5.8594e-04  timestep time =   131.411 ms   total time =   14.7397 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7450  max:  116.3759  avg:  114.6992   ms
+ Time Boundaries          min:    9.1221  max:   14.2350  avg:   10.9080   ms
+ Time Total               min:  130.9760  max:  130.9938  avg:  130.9860   ms
+n_step: 50   sim time:  0.0292968   sim timestep: 5.8594e-04  timestep time =   131.150 ms   total time =   14.8716 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8161  max:  116.2100  avg:  114.6811   ms
+ Time Boundaries          min:    8.6432  max:   13.0999  avg:   10.4504   ms
+ Time Total               min:  129.7090  max:  129.7259  avg:  129.7175   ms
+n_step: 51   sim time:  0.0298828   sim timestep: 5.8594e-04  timestep time =   129.882 ms   total time =   15.0022 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6330  max:  116.3840  avg:  114.6846   ms
+ Time Boundaries          min:    9.2189  max:   13.6001  avg:   11.0105   ms
+ Time Total               min:  130.3442  max:  130.3620  avg:  130.3536   ms
+n_step: 52   sim time:  0.0304687   sim timestep: 5.8594e-04  timestep time =   130.516 ms   total time =   15.1335 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8321  max:  116.3321  avg:  114.6838   ms
+ Time Boundaries          min:    8.6691  max:   13.8381  avg:   10.5135   ms
+ Time Total               min:  130.5320  max:  130.5480  avg:  130.5412   ms
+n_step: 53   sim time:  0.0310547   sim timestep: 5.8594e-04  timestep time =   130.703 ms   total time =   15.2649 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8709  max:  116.3950  avg:  114.6691   ms
+ Time Boundaries          min:    8.6720  max:   13.6170  avg:   10.4911   ms
+ Time Total               min:  130.3730  max:  130.3890  avg:  130.3811   ms
+n_step: 54   sim time:  0.0316406   sim timestep: 5.8594e-04  timestep time =   130.547 ms   total time =   15.3962 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7720  max:  116.3700  avg:  114.6965   ms
+ Time Boundaries          min:    8.6219  max:   12.9769  avg:   10.4138   ms
+ Time Total               min:  129.7109  max:  129.7350  avg:  129.7227   ms
+n_step: 55   sim time:  0.0322265   sim timestep: 5.8594e-04  timestep time =   129.895 ms   total time =   15.5268 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7110  max:  116.5290  avg:  114.6793   ms
+ Time Boundaries          min:    8.6591  max:   13.2279  avg:   10.5015   ms
+ Time Total               min:  130.1229  max:  130.1420  avg:  130.1318   ms
+n_step: 56   sim time:  0.0328125   sim timestep: 5.8594e-04  timestep time =   130.294 ms   total time =   15.6579 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8850  max:  116.2598  avg:  114.6912   ms
+ Time Boundaries          min:    9.1991  max:   14.3521  avg:   10.9924   ms
+ Time Total               min:  130.9750  max:  130.9931  avg:  130.9850   ms
+n_step: 57   sim time:  0.0333984   sim timestep: 5.8594e-04  timestep time =   131.152 ms   total time =   15.7898 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8139  max:  116.2829  avg:  114.6997   ms
+ Time Boundaries          min:    9.1379  max:   13.6280  avg:   10.9285   ms
+ Time Total               min:  130.2772  max:  130.3020  avg:  130.2909   ms
+n_step: 58   sim time:  0.0339843   sim timestep: 5.8594e-04  timestep time =   130.463 ms   total time =   15.9210 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8030  max:  116.1871  avg:  114.6961   ms
+ Time Boundaries          min:    8.9788  max:   14.1671  avg:   10.7771   ms
+ Time Total               min:  130.7080  max:  130.7271  avg:  130.7176   ms
+n_step: 59   sim time:  0.0345703   sim timestep: 5.8594e-04  timestep time =   130.890 ms   total time =   16.0526 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6659  max:  116.4460  avg:  114.7016   ms
+ Time Boundaries          min:    8.9569  max:   13.3591  avg:   10.6883   ms
+ Time Total               min:  130.1730  max:  130.1901  avg:  130.1821   ms
+n_step: 60   sim time:  0.0351562   sim timestep: 5.8594e-04  timestep time =   130.354 ms   total time =   16.1837 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6671  max:  116.3149  avg:  114.7144   ms
+ Time Boundaries          min:    8.9979  max:   13.5779  avg:   10.8258   ms
+ Time Total               min:  130.2528  max:  130.2681  avg:  130.2611   ms
+n_step: 61   sim time:  0.0357422   sim timestep: 5.8594e-04  timestep time =   130.427 ms   total time =   16.3149 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6950  max:  116.3471  avg:  114.7113   ms
+ Time Boundaries          min:    9.2239  max:   13.7460  avg:   11.0172   ms
+ Time Total               min:  130.4550  max:  130.4719  avg:  130.4633   ms
+n_step: 62   sim time:  0.0363281   sim timestep: 5.8594e-04  timestep time =   130.628 ms   total time =   16.4462 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7179  max:  116.3130  avg:  114.7020   ms
+ Time Boundaries          min:    8.9810  max:   14.1201  avg:   10.7791   ms
+ Time Total               min:  130.7960  max:  130.8150  avg:  130.8056   ms
+n_step: 63   sim time:  0.0369140   sim timestep: 5.8594e-04  timestep time =   130.970 ms   total time =   16.5780 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8490  max:  116.3790  avg:  114.6959   ms
+ Time Boundaries          min:    9.1720  max:   13.6981  avg:   10.9833   ms
+ Time Total               min:  130.4350  max:  130.4541  avg:  130.4461   ms
+n_step: 64   sim time:  0.0375000   sim timestep: 5.8594e-04  timestep time =   130.614 ms   total time =   16.7093 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7851  max:  116.2889  avg:  114.6862   ms
+ Time Boundaries          min:    9.1519  max:   14.2760  avg:   10.9463   ms
+ Time Total               min:  130.9240  max:  130.9478  avg:  130.9367   ms
+n_step: 65   sim time:  0.0380859   sim timestep: 5.8594e-04  timestep time =   131.100 ms   total time =   16.8412 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7839  max:  116.2291  avg:  114.7027   ms
+ Time Boundaries          min:    9.1000  max:   13.5899  avg:   10.9079   ms
+ Time Total               min:  130.1849  max:  130.2030  avg:  130.1929   ms
+n_step: 66   sim time:  0.0386718   sim timestep: 5.8594e-04  timestep time =   130.362 ms   total time =   16.9723 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8130  max:  116.1470  avg:  114.6787   ms
+ Time Boundaries          min:    8.9719  max:   14.0338  avg:   10.7791   ms
+ Time Total               min:  130.5389  max:  130.5590  avg:  130.5516   ms
+n_step: 67   sim time:  0.0392578   sim timestep: 5.8594e-04  timestep time =   130.710 ms   total time =   17.1037 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7770  max:  116.2920  avg:  114.6768   ms
+ Time Boundaries          min:    9.1400  max:   13.6120  avg:   10.9275   ms
+ Time Total               min:  130.2650  max:  130.2850  avg:  130.2762   ms
+n_step: 68   sim time:  0.0398437   sim timestep: 5.8594e-04  timestep time =   130.443 ms   total time =   17.2349 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8740  max:  116.3290  avg:  114.6816   ms
+ Time Boundaries          min:    9.1500  max:   13.6230  avg:   10.9630   ms
+ Time Total               min:  130.3120  max:  130.3320  avg:  130.3226   ms
+n_step: 69   sim time:  0.0404297   sim timestep: 5.8594e-04  timestep time =   130.485 ms   total time =   17.3661 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8361  max:  116.0860  avg:  114.6626   ms
+ Time Boundaries          min:    9.1488  max:   14.3521  avg:   10.9545   ms
+ Time Total               min:  130.8019  max:  130.8239  avg:  130.8144   ms
+n_step: 70   sim time:  0.0410156   sim timestep: 5.8594e-04  timestep time =   130.975 ms   total time =   17.4978 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7009  max:  116.1292  avg:  114.6832   ms
+ Time Boundaries          min:    9.2659  max:   13.7389  avg:   11.0631   ms
+ Time Total               min:  130.2319  max:  130.2519  avg:  130.2413   ms
+n_step: 71   sim time:  0.0416015   sim timestep: 5.8594e-04  timestep time =   130.407 ms   total time =   17.6290 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  113.0271  max:  116.4291  avg:  114.6880   ms
+ Time Boundaries          min:    8.5030  max:   13.3941  avg:   10.3076   ms
+ Time Total               min:  130.1830  max:  130.2340  avg:  130.2230   ms
+n_step: 72   sim time:  0.0421875   sim timestep: 5.8594e-04  timestep time =   130.384 ms   total time =   17.7601 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8721  max:  116.2939  avg:  114.6942   ms
+ Time Boundaries          min:    9.0261  max:   14.1430  avg:   10.8168   ms
+ Time Total               min:  130.7929  max:  130.8169  avg:  130.8059   ms
+n_step: 73   sim time:  0.0427734   sim timestep: 5.8594e-04  timestep time =   130.975 ms   total time =   17.8919 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8550  max:  116.2050  avg:  114.7119   ms
+ Time Boundaries          min:    9.2108  max:   14.2841  avg:   11.0088   ms
+ Time Total               min:  130.8451  max:  130.8591  avg:  130.8521   ms
+n_step: 74   sim time:  0.0433593   sim timestep: 5.8594e-04  timestep time =   131.016 ms   total time =   18.0236 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8330  max:  116.3101  avg:  114.6921   ms
+ Time Boundaries          min:    8.9312  max:   14.1301  avg:   10.6952   ms
+ Time Total               min:  130.7979  max:  130.8181  avg:  130.8085   ms
+n_step: 75   sim time:  0.0439453   sim timestep: 5.8594e-04  timestep time =   130.979 ms   total time =   18.1553 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7169  max:  116.2789  avg:  114.6980   ms
+ Time Boundaries          min:    9.1748  max:   14.3549  avg:   10.9583   ms
+ Time Total               min:  130.9950  max:  131.0191  avg:  131.0083   ms
+n_step: 76   sim time:  0.0445312   sim timestep: 5.8594e-04  timestep time =   131.176 ms   total time =   18.2873 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.9138  max:  116.2300  avg:  114.7021   ms
+ Time Boundaries          min:    9.1431  max:   13.6740  avg:   10.9070   ms
+ Time Total               min:  130.2688  max:  130.2881  avg:  130.2780   ms
+n_step: 77   sim time:  0.0451171   sim timestep: 5.8594e-04  timestep time =   130.447 ms   total time =   18.4185 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8151  max:  116.4639  avg:  114.6890   ms
+ Time Boundaries          min:    9.1379  max:   13.6528  avg:   10.9250   ms
+ Time Total               min:  130.4741  max:  130.4910  avg:  130.4836   ms
+n_step: 78   sim time:  0.0457031   sim timestep: 5.8594e-04  timestep time =   130.651 ms   total time =   18.5498 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7088  max:  116.2660  avg:  114.6660   ms
+ Time Boundaries          min:    8.7039  max:   13.7460  avg:   10.5132   ms
+ Time Total               min:  130.3780  max:  130.3961  avg:  130.3870   ms
+n_step: 79   sim time:  0.0462890   sim timestep: 5.8594e-04  timestep time =   130.553 ms   total time =   18.6811 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8411  max:  116.1151  avg:  114.6851   ms
+ Time Boundaries          min:    8.6348  max:   13.0579  avg:   10.4257   ms
+ Time Total               min:  129.5369  max:  129.5600  avg:  129.5492   ms
+n_step: 80   sim time:  0.0468750   sim timestep: 5.8594e-04  timestep time =   129.712 ms   total time =   18.8116 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7040  max:  116.2231  avg:  114.6866   ms
+ Time Boundaries          min:    9.0411  max:   14.0860  avg:   10.8398   ms
+ Time Total               min:  130.6629  max:  130.6832  avg:  130.6737   ms
+n_step: 81   sim time:  0.0474609   sim timestep: 5.8594e-04  timestep time =   130.838 ms   total time =   18.9432 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7741  max:  116.2691  avg:  114.6961   ms
+ Time Boundaries          min:    8.6391  max:   13.7699  avg:   10.4689   ms
+ Time Total               min:  130.3980  max:  130.4221  avg:  130.4114   ms
+n_step: 82   sim time:  0.0480468   sim timestep: 5.8594e-04  timestep time =   130.586 ms   total time =   19.0745 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7758  max:  116.2410  avg:  114.7322   ms
+ Time Boundaries          min:    9.1960  max:   13.7758  avg:   10.9878   ms
+ Time Total               min:  130.4400  max:  130.4591  avg:  130.4502   ms
+n_step: 83   sim time:  0.0486328   sim timestep: 5.8594e-04  timestep time =   130.622 ms   total time =   19.2059 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8039  max:  116.2920  avg:  114.6910   ms
+ Time Boundaries          min:    9.2070  max:   13.7360  avg:   11.0769   ms
+ Time Total               min:  130.4700  max:  130.5151  avg:  130.5047   ms
+n_step: 84   sim time:  0.0492187   sim timestep: 5.8594e-04  timestep time =   130.668 ms   total time =   19.3373 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.6499  max:  116.4129  avg:  114.6865   ms
+ Time Boundaries          min:    9.4690  max:   14.4701  avg:   11.2275   ms
+ Time Total               min:  131.3000  max:  131.3281  avg:  131.3146   ms
+n_step: 85   sim time:  0.0498046   sim timestep: 5.8594e-04  timestep time =   131.492 ms   total time =   19.4695 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.9720  max:  116.3681  avg:  114.6902   ms
+ Time Boundaries          min:    9.0902  max:   13.5911  avg:   10.8925   ms
+ Time Total               min:  130.4369  max:  130.4550  avg:  130.4465   ms
+n_step: 86   sim time:  0.0503906   sim timestep: 5.8594e-04  timestep time =   130.610 ms   total time =   19.6009 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.9429  max:  116.3049  avg:  114.6938   ms
+ Time Boundaries          min:    9.1729  max:   14.2872  avg:   11.0462   ms
+ Time Total               min:  131.0830  max:  131.1061  avg:  131.0970   ms
+n_step: 87   sim time:  0.0509765   sim timestep: 5.8594e-04  timestep time =   131.263 ms   total time =   19.7329 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7660  max:  116.1499  avg:  114.7292   ms
+ Time Boundaries          min:    9.2721  max:   13.6740  avg:   11.0613   ms
+ Time Total               min:  130.3241  max:  130.3511  avg:  130.3372   ms
+n_step: 88   sim time:  0.0515625   sim timestep: 5.8594e-04  timestep time =   130.500 ms   total time =   19.8641 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.9010  max:  116.0851  avg:  114.6787   ms
+ Time Boundaries          min:    9.0821  max:   14.3261  avg:   10.8551   ms
+ Time Total               min:  130.8169  max:  130.8351  avg:  130.8260   ms
+n_step: 89   sim time:  0.0521484   sim timestep: 5.8594e-04  timestep time =   130.990 ms   total time =   19.9959 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.9420  max:  116.2951  avg:  114.7269   ms
+ Time Boundaries          min:    9.4950  max:   14.6539  avg:   11.3554   ms
+ Time Total               min:  131.4721  max:  131.4900  avg:  131.4813   ms
+n_step: 90   sim time:  0.0527343   sim timestep: 5.8594e-04  timestep time =   131.648 ms   total time =   20.1283 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.9119  max:  116.4961  avg:  114.7035   ms
+ Time Boundaries          min:    9.3269  max:   13.7711  avg:   11.1206   ms
+ Time Total               min:  130.6760  max:  130.6949  avg:  130.6860   ms
+n_step: 91   sim time:  0.0533203   sim timestep: 5.8594e-04  timestep time =   130.849 ms   total time =   20.2599 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.9251  max:  116.2879  avg:  114.7114   ms
+ Time Boundaries          min:    9.1391  max:   13.4490  avg:   10.9153   ms
+ Time Total               min:  130.1548  max:  130.1708  avg:  130.1627   ms
+n_step: 92   sim time:  0.0539062   sim timestep: 5.8594e-04  timestep time =   130.334 ms   total time =   20.3909 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.9260  max:  116.2899  avg:  114.7208   ms
+ Time Boundaries          min:    8.6219  max:   13.4549  avg:   10.4375   ms
+ Time Total               min:  130.1060  max:  130.1241  avg:  130.1171   ms
+n_step: 93   sim time:  0.0544921   sim timestep: 5.8594e-04  timestep time =   130.287 ms   total time =   20.5219 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8180  max:  116.0700  avg:  114.6997   ms
+ Time Boundaries          min:    8.6119  max:   13.7570  avg:   10.3897   ms
+ Time Total               min:  130.1889  max:  130.2090  avg:  130.1970   ms
+n_step: 94   sim time:  0.0550781   sim timestep: 5.8594e-04  timestep time =   130.357 ms   total time =   20.6530 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8700  max:  116.2758  avg:  114.6917   ms
+ Time Boundaries          min:    8.9371  max:   13.3090  avg:   10.7160   ms
+ Time Total               min:  130.0011  max:  130.0170  avg:  130.0101   ms
+n_step: 95   sim time:  0.0556640   sim timestep: 5.8594e-04  timestep time =   130.179 ms   total time =   20.7840 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.9551  max:  116.2961  avg:  114.6999   ms
+ Time Boundaries          min:    9.1960  max:   14.2210  avg:   10.9513   ms
+ Time Total               min:  130.9080  max:  130.9240  avg:  130.9162   ms
+n_step: 96   sim time:  0.0562499   sim timestep: 5.8594e-04  timestep time =   131.082 ms   total time =   20.9158 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7770  max:  116.0681  avg:  114.6906   ms
+ Time Boundaries          min:    9.1779  max:   13.6600  avg:   10.9111   ms
+ Time Total               min:  130.0859  max:  130.1019  avg:  130.0936   ms
+n_step: 97   sim time:  0.0568359   sim timestep: 5.8594e-04  timestep time =   130.255 ms   total time =   21.0468 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8240  max:  116.3990  avg:  114.6892   ms
+ Time Boundaries          min:    8.6539  max:   13.2198  avg:   10.4780   ms
+ Time Total               min:  130.0600  max:  130.0759  avg:  130.0674   ms
+n_step: 98   sim time:  0.0574218   sim timestep: 5.8594e-04  timestep time =   130.235 ms   total time =   21.1778 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7551  max:  116.4620  avg:  114.7063   ms
+ Time Boundaries          min:    9.1770  max:   13.6719  avg:   10.9317   ms
+ Time Total               min:  130.4941  max:  130.5110  avg:  130.5035   ms
+n_step: 99   sim time:  0.0580078   sim timestep: 5.8594e-04  timestep time =   130.669 ms   total time =   21.3092 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.8311  max:  116.2808  avg:  114.7011   ms
+ Time Boundaries          min:    9.1720  max:   14.2369  avg:   10.9501   ms
+ Time Total               min:  130.8830  max:  130.9049  avg:  130.8938   ms
+n_step: 100   sim time:  0.0585937   sim timestep: 5.8594e-04  timestep time =   131.061 ms   total time =   21.4410 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7212  max:  116.1351  avg:  114.6993   ms
+ Time Boundaries          min:    9.1631  max:   14.1151  avg:   10.9602   ms
+ Time Total               min:  130.6131  max:  130.6310  avg:  130.6231   ms
+n_step: 101   sim time:  0.0591796   sim timestep: 5.8594e-04  timestep time =   130.790 ms   total time =   21.5725 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7582  max:  116.1280  avg:  114.7103   ms
+ Time Boundaries          min:    9.1999  max:   13.6490  avg:   10.9987   ms
+ Time Total               min:  130.1479  max:  130.1651  avg:  130.1578   ms
+n_step: 102   sim time:  0.0597656   sim timestep: 5.8594e-04  timestep time =   130.329 ms   total time =   21.7036 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time MHD                 min:  112.7970  max:  116.1051  avg:  114.6888   ms
+ Time Boundaries          min:    9.4631  max:   14.5922  avg:   11.2547   ms
+ Time Total               min:  131.0580  max:  131.0761  avg:  131.0687   ms
+n_step: 103   sim time:  0.0600000   sim timestep: 2.3443e-04  timestep time =   131.231 ms   total time =   21.8355 s
+
+
+Saving Snapshot: 1 
+Global maximum magnetic divergence = 0.0000e+00
+
+Average Times      n_steps:103
+ Time MHD                 avg:  116.2875   ms
+ Time Boundaries          avg:   13.7567   ms
+ Time Total               avg:  130.4419   ms
+Writing timing values to file: run_timing.log  
+ Creating File: run_timing.log 
+Saved Timing: run_timing.log 
+
