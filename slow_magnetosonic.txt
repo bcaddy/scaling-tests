@@ -10,10 +10,11 @@
 
 ################################################
 # final output time
-tout=2.0
+# tout=2.0 # This is the time for one period
+tout=0.06 # This is the time for roughly 100 time steps
 
 # time interval for output
-outstep=2.0
+outstep=0.06
 
 # name of initial conditions
 init=Linear_Wave
