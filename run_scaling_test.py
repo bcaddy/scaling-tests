@@ -137,9 +137,12 @@ def submit_job(account, time, num_ranks, executable_path, input_file, scaling_te
     cholla_command, output_directory = make_cholla_command(executable_path, input_file, resolution, domain_length, num_ranks, scaling_test_directory)
 
     # cd into the correct directory so that cholla output files go there
-    cd_command = f'cd {output_directory}; '
+    cd_command = f'cd {output_directory} && '
 
-    sbatch_command = make_sbatch_command(account, time, num_nodes, output_directory, cd_command + srun_command + cholla_command, mail_user, job_name)
+    # Source the setup file
+    source_command = 'source ' + str(executable_path.parent.parent / 'builds' / 'setup.frontier.cce.sh') + ' && '
+
+    sbatch_command = make_sbatch_command(account, time, num_nodes, output_directory, cd_command + source_command + srun_command + cholla_command, mail_user, job_name)
 
     print('The sbatch command is:\n', sbatch_command)
 
