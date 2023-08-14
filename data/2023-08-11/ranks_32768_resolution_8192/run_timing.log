@@ -1,0 +1,5 @@
+Git Commit Hash = ab36c0f630a82e6eb9ea5e0f43c9e4eb0e81b004
+Macro Flags     = -DCUDA -DMPI_CHOLLA -DPRECISION=2 -DPPMC -DHLLD -DMHD -DVL -DDENSITY_FLOOR -DTEMPERATURE_FLOOR -DCPU_TIME -DOUTPUT -DHDF5 -DMPI_GPU -DO_HIP -DGIT_HASH=ab36c0f630a82e6eb9ea5e0f43c9e4eb0e81b004
+
+#n_proc  nx  ny  nz  n_omp  n_steps  Hydro_Integrator  Hydro  Boundaries  Total   
+32768 8192 8192 8192 0 103 11492.5 11675.4 2152.53 13855.6 
