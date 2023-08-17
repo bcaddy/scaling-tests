@@ -1,0 +1,766 @@
+Override with nx=512
+Override with ny=512
+Override with nz=512
+Override with xlen=2.0
+Override with ylen=2.0
+Override with zlen=2.0
+Override with wave_length=2.0
+Override with outdir=/lustre/orion/ast181/scratch/rcaddy/scaling-tests/data/2023-08-15/ranks_8_resolution_512/
+Git Commit Hash = 61ea81d0d627d194d0b6e7c0eb20e3c757ad008d
+Macro Flags     = -DCUDA -DMPI_CHOLLA -DPRECISION=2 -DPPMC -DHLLD -DMHD -DVL -DDENSITY_FLOOR -DTEMPERATURE_FLOOR -DCPU_TIME -DOUTPUT -DHDF5 -DMPI_GPU -DO_HIP -DGIT_HASH=61ea81d0d627d194d0b6e7c0eb20e3c757ad008d
+Parameter values:  nx = 512, ny = 512, nz = 512, tout = 0.060000, init = Linear_Wave, boundaries = 1 1 1 1 1 1
+Output directory:  /lustre/orion/ast181/scratch/rcaddy/scaling-tests/data/2023-08-15/ranks_8_resolution_512/
+
+Creating Log File: run_output.log 
+
+nproc_x 2 nproc_y 2 nproc_z 2
+Allocating MPI communication buffers on GPU (nx = 2621440, ny = 2723840, nz = 2830240).
+Local number of grid cells: 256 256 256 18821096
+Setting initial conditions...
+Initial conditions set.
+
+Timing Functions is ON 
+Setting boundary conditions...
+Boundary conditions set.
+Dimensions of each cell: dx = 0.003906 dy = 0.003906 dz = 0.003906
+Ratio of specific heats gamma = 1.666667
+Nstep = 0  Simulation time = 0.000000
+Writing initial conditions to file...
+
+Saving Snapshot: 0 
+Global maximum magnetic divergence = 0.0000e+00
+Init  min:    3.7382  max:    3.7383  avg:    3.7383
+Starting calculations.
+ Time Hydro_Integrator    min:  845.8591  max:  890.6679  avg:  860.9020   ms
+ Time Hydro               min:  892.0889  max:  892.1671  avg:  892.1186   ms
+ Time Boundaries          min:    5.0609  max:    5.0960  avg:    5.0721   ms
+ Time Total               min:  897.2859  max:  898.2131  avg:  897.7945   ms
+n_step: 1   sim time:  0.0005859   sim timestep: 5.8594e-04  timestep time =   897.312 ms   total time =    4.7497 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.6330  max:   97.2700  avg:   96.4322   ms
+ Time Hydro               min:   98.6910  max:   98.7780  avg:   98.7185   ms
+ Time Boundaries          min:    5.0251  max:    5.0611  avg:    5.0421   ms
+ Time Total               min:  103.8568  max:  103.8601  avg:  103.8592   ms
+n_step: 2   sim time:  0.0011719   sim timestep: 5.8594e-04  timestep time =   103.874 ms   total time =    4.8542 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2542  max:   96.4520  avg:   95.9327   ms
+ Time Hydro               min:   97.8460  max:   97.9640  avg:   97.8934   ms
+ Time Boundaries          min:    5.0168  max:    5.0628  avg:    5.0395   ms
+ Time Total               min:  103.0469  max:  103.0490  avg:  103.0482   ms
+n_step: 3   sim time:  0.0017578   sim timestep: 5.8594e-04  timestep time =   103.066 ms   total time =    4.9580 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4869  max:   96.8411  avg:   96.1304   ms
+ Time Hydro               min:   98.2380  max:   98.3520  avg:   98.2783   ms
+ Time Boundaries          min:    5.0170  max:    5.0461  avg:    5.0316   ms
+ Time Total               min:  103.4210  max:  103.4231  avg:  103.4223   ms
+n_step: 4   sim time:  0.0023437   sim timestep: 5.8594e-04  timestep time =   103.439 ms   total time =    5.0621 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3999  max:   96.5030  avg:   95.8531   ms
+ Time Hydro               min:   97.9190  max:   97.9669  avg:   97.9441   ms
+ Time Boundaries          min:    5.0170  max:    5.0461  avg:    5.0285   ms
+ Time Total               min:  103.0331  max:  103.0359  avg:  103.0353   ms
+n_step: 5   sim time:  0.0029297   sim timestep: 5.8594e-04  timestep time =   103.049 ms   total time =    5.1658 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3028  max:   96.4000  avg:   95.8581   ms
+ Time Hydro               min:   97.8160  max:   97.8808  avg:   97.8529   ms
+ Time Boundaries          min:    5.0142  max:    5.0440  avg:    5.0293   ms
+ Time Total               min:  102.9451  max:  102.9470  avg:  102.9466   ms
+n_step: 6   sim time:  0.0035156   sim timestep: 5.8594e-04  timestep time =   102.963 ms   total time =    5.2695 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.1669  max:   96.5819  avg:   95.8188   ms
+ Time Hydro               min:   97.9950  max:   98.0759  avg:   98.0334   ms
+ Time Boundaries          min:    5.0180  max:    5.0530  avg:    5.0284   ms
+ Time Total               min:  103.1489  max:  103.1511  avg:  103.1503   ms
+n_step: 7   sim time:  0.0041016   sim timestep: 5.8594e-04  timestep time =   103.167 ms   total time =    5.3733 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3841  max:   96.6041  avg:   95.9538   ms
+ Time Hydro               min:   98.0051  max:   98.0890  avg:   98.0448   ms
+ Time Boundaries          min:    5.0149  max:    5.0480  avg:    5.0310   ms
+ Time Total               min:  103.1590  max:  103.1621  avg:  103.1613   ms
+n_step: 8   sim time:  0.0046875   sim timestep: 5.8594e-04  timestep time =   103.176 ms   total time =    5.4772 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2871  max:   96.7379  avg:   95.9860   ms
+ Time Hydro               min:   98.1529  max:   98.2170  avg:   98.1845   ms
+ Time Boundaries          min:    5.0130  max:    5.0468  avg:    5.0292   ms
+ Time Total               min:  103.2820  max:  103.2848  avg:  103.2838   ms
+n_step: 9   sim time:  0.0052734   sim timestep: 5.8594e-04  timestep time =   103.298 ms   total time =    5.5812 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3710  max:   96.3480  avg:   95.7911   ms
+ Time Hydro               min:   97.7552  max:   97.8241  avg:   97.7840   ms
+ Time Boundaries          min:    5.0139  max:    5.0521  avg:    5.0318   ms
+ Time Total               min:  102.8969  max:  102.9000  avg:  102.8995   ms
+n_step: 10   sim time:  0.0058594   sim timestep: 5.8594e-04  timestep time =   102.916 ms   total time =    5.6847 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.1979  max:   96.7119  avg:   95.9344   ms
+ Time Hydro               min:   98.1140  max:   98.2099  avg:   98.1568   ms
+ Time Boundaries          min:    5.0089  max:    5.0411  avg:    5.0255   ms
+ Time Total               min:  103.2741  max:  103.2760  avg:  103.2754   ms
+n_step: 11   sim time:  0.0064453   sim timestep: 5.8594e-04  timestep time =   103.288 ms   total time =    5.7887 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3429  max:   96.8230  avg:   96.0072   ms
+ Time Hydro               min:   98.2599  max:   98.3241  avg:   98.2837   ms
+ Time Boundaries          min:    5.0120  max:    5.0411  avg:    5.0321   ms
+ Time Total               min:  103.3840  max:  103.3871  avg:  103.3860   ms
+n_step: 12   sim time:  0.0070312   sim timestep: 5.8594e-04  timestep time =   103.401 ms   total time =    5.8928 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3228  max:   96.7920  avg:   95.9989   ms
+ Time Hydro               min:   98.2049  max:   98.2881  avg:   98.2380   ms
+ Time Boundaries          min:    5.0108  max:    5.0449  avg:    5.0282   ms
+ Time Total               min:  103.3480  max:  103.3511  avg:  103.3506   ms
+n_step: 13   sim time:  0.0076172   sim timestep: 5.8594e-04  timestep time =   103.366 ms   total time =    5.9968 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3879  max:   96.3991  avg:   95.8923   ms
+ Time Hydro               min:   97.8241  max:   97.8751  avg:   97.8447   ms
+ Time Boundaries          min:    5.0101  max:    5.0452  avg:    5.0215   ms
+ Time Total               min:  102.9449  max:  102.9470  avg:  102.9460   ms
+n_step: 14   sim time:  0.0082031   sim timestep: 5.8594e-04  timestep time =   102.962 ms   total time =    6.1005 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3310  max:   96.8561  avg:   96.0994   ms
+ Time Hydro               min:   98.2609  max:   98.3732  avg:   98.2954   ms
+ Time Boundaries          min:    5.0330  max:    5.0392  avg:    5.0358   ms
+ Time Total               min:  103.4300  max:  103.4329  avg:  103.4321   ms
+n_step: 15   sim time:  0.0087891   sim timestep: 5.8594e-04  timestep time =   103.450 ms   total time =    6.2046 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.1209  max:   96.5929  avg:   95.8088   ms
+ Time Hydro               min:   98.0079  max:   98.0718  avg:   98.0410   ms
+ Time Boundaries          min:    5.0051  max:    5.0459  avg:    5.0263   ms
+ Time Total               min:  103.1342  max:  103.1370  avg:  103.1365   ms
+n_step: 16   sim time:  0.0093750   sim timestep: 5.8594e-04  timestep time =   103.151 ms   total time =    6.3084 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   94.9571  max:   96.5290  avg:   95.7909   ms
+ Time Hydro               min:   97.9421  max:   98.0191  avg:   97.9693   ms
+ Time Boundaries          min:    5.0180  max:    5.0478  avg:    5.0363   ms
+ Time Total               min:  103.0860  max:  103.0891  avg:  103.0879   ms
+n_step: 17   sim time:  0.0099609   sim timestep: 5.8594e-04  timestep time =   103.105 ms   total time =    6.4122 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2430  max:   96.3800  avg:   95.8093   ms
+ Time Hydro               min:   97.7809  max:   97.8751  avg:   97.8096   ms
+ Time Boundaries          min:    5.0118  max:    5.0440  avg:    5.0275   ms
+ Time Total               min:  102.9420  max:  102.9451  avg:  102.9441   ms
+n_step: 18   sim time:  0.0105469   sim timestep: 5.8594e-04  timestep time =   102.960 ms   total time =    6.5159 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3050  max:   96.6480  avg:   96.0680   ms
+ Time Hydro               min:   98.0659  max:   98.1700  avg:   98.1047   ms
+ Time Boundaries          min:    5.0042  max:    5.0530  avg:    5.0252   ms
+ Time Total               min:  103.2400  max:  103.2431  avg:  103.2421   ms
+n_step: 19   sim time:  0.0111328   sim timestep: 5.8594e-04  timestep time =   103.258 ms   total time =    6.6198 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2959  max:   96.3850  avg:   95.8702   ms
+ Time Hydro               min:   97.7790  max:   97.8889  avg:   97.8266   ms
+ Time Boundaries          min:    5.0008  max:    5.0111  avg:    5.0066   ms
+ Time Total               min:  102.9210  max:  102.9232  avg:  102.9226   ms
+n_step: 20   sim time:  0.0117187   sim timestep: 5.8594e-04  timestep time =   102.937 ms   total time =    6.7234 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.1538  max:   96.7250  avg:   95.7871   ms
+ Time Hydro               min:   98.1359  max:   98.1870  avg:   98.1560   ms
+ Time Boundaries          min:    4.9989  max:    5.0321  avg:    5.0153   ms
+ Time Total               min:  103.2391  max:  103.2419  avg:  103.2413   ms
+n_step: 21   sim time:  0.0123047   sim timestep: 5.8594e-04  timestep time =   103.256 ms   total time =    6.8273 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4709  max:   96.7970  avg:   96.0746   ms
+ Time Hydro               min:   98.2149  max:   98.2869  avg:   98.2459   ms
+ Time Boundaries          min:    5.0011  max:    5.0399  avg:    5.0176   ms
+ Time Total               min:  103.3471  max:  103.3509  avg:  103.3496   ms
+n_step: 22   sim time:  0.0128906   sim timestep: 5.8594e-04  timestep time =   103.364 ms   total time =    6.9314 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.5141  max:   96.5631  avg:   96.0445   ms
+ Time Hydro               min:   97.9941  max:   98.0549  avg:   98.0290   ms
+ Time Boundaries          min:    5.0070  max:    5.0380  avg:    5.0175   ms
+ Time Total               min:  103.1120  max:  103.1141  avg:  103.1131   ms
+n_step: 23   sim time:  0.0134766   sim timestep: 5.8594e-04  timestep time =   103.128 ms   total time =    7.0352 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2291  max:   96.4720  avg:   95.9301   ms
+ Time Hydro               min:   97.8601  max:   97.9571  avg:   97.9023   ms
+ Time Boundaries          min:    5.0120  max:    5.0461  avg:    5.0322   ms
+ Time Total               min:  103.0209  max:  103.0231  avg:  103.0219   ms
+n_step: 24   sim time:  0.0140625   sim timestep: 5.8594e-04  timestep time =   103.039 ms   total time =    7.1389 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2902  max:   96.6301  avg:   95.9655   ms
+ Time Hydro               min:   98.0501  max:   98.0821  avg:   98.0647   ms
+ Time Boundaries          min:    5.0080  max:    5.0459  avg:    5.0266   ms
+ Time Total               min:  103.1489  max:  103.1499  avg:  103.1494   ms
+n_step: 25   sim time:  0.0146484   sim timestep: 5.8594e-04  timestep time =   103.163 ms   total time =    7.2427 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.5069  max:   96.7419  avg:   95.9554   ms
+ Time Hydro               min:   98.1321  max:   98.2430  avg:   98.1874   ms
+ Time Boundaries          min:    5.0070  max:    5.0421  avg:    5.0221   ms
+ Time Total               min:  103.3010  max:  103.3039  avg:  103.3030   ms
+n_step: 26   sim time:  0.0152344   sim timestep: 5.8594e-04  timestep time =   103.317 ms   total time =    7.3467 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3889  max:   96.4050  avg:   95.9946   ms
+ Time Hydro               min:   97.7969  max:   97.8720  avg:   97.8271   ms
+ Time Boundaries          min:    4.9992  max:    5.0292  avg:    5.0082   ms
+ Time Total               min:  102.9179  max:  102.9210  avg:  102.9201   ms
+n_step: 27   sim time:  0.0158203   sim timestep: 5.8594e-04  timestep time =   102.937 ms   total time =    7.4504 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4368  max:   96.8318  avg:   96.0360   ms
+ Time Hydro               min:   98.2468  max:   98.3331  avg:   98.2968   ms
+ Time Boundaries          min:    5.0080  max:    5.0392  avg:    5.0184   ms
+ Time Total               min:  103.3890  max:  103.3909  avg:  103.3906   ms
+n_step: 28   sim time:  0.0164062   sim timestep: 5.8594e-04  timestep time =   103.407 ms   total time =    7.5544 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.1169  max:   96.6330  avg:   95.8598   ms
+ Time Hydro               min:   98.0179  max:   98.1050  avg:   98.0688   ms
+ Time Boundaries          min:    5.0011  max:    5.0340  avg:    5.0175   ms
+ Time Total               min:  103.1568  max:  103.1621  avg:  103.1604   ms
+n_step: 29   sim time:  0.0169922   sim timestep: 5.8594e-04  timestep time =   103.176 ms   total time =    7.6583 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2492  max:   96.8518  avg:   96.0086   ms
+ Time Hydro               min:   98.2389  max:   98.3779  avg:   98.3022   ms
+ Time Boundaries          min:    5.0120  max:    5.0449  avg:    5.0225   ms
+ Time Total               min:  103.4391  max:  103.4410  avg:  103.4405   ms
+n_step: 30   sim time:  0.0175781   sim timestep: 5.8594e-04  timestep time =   103.455 ms   total time =    7.7624 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2539  max:   96.4849  avg:   95.8991   ms
+ Time Hydro               min:   97.8899  max:   97.9669  avg:   97.9280   ms
+ Time Boundaries          min:    5.0149  max:    5.0440  avg:    5.0291   ms
+ Time Total               min:  103.0309  max:  103.0331  avg:  103.0326   ms
+n_step: 31   sim time:  0.0181640   sim timestep: 5.8594e-04  timestep time =   103.050 ms   total time =    7.8661 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3870  max:   96.3981  avg:   95.8571   ms
+ Time Hydro               min:   97.7831  max:   97.9130  avg:   97.8357   ms
+ Time Boundaries          min:    5.0030  max:    5.0361  avg:    5.0185   ms
+ Time Total               min:  102.9730  max:  102.9739  avg:  102.9736   ms
+n_step: 32   sim time:  0.0187500   sim timestep: 5.8594e-04  timestep time =   102.989 ms   total time =    7.9698 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   94.9352  max:   96.4231  avg:   95.9430   ms
+ Time Hydro               min:   97.8420  max:   97.9381  avg:   97.8757   ms
+ Time Boundaries          min:    5.0030  max:    5.0349  avg:    5.0113   ms
+ Time Total               min:  102.9918  max:  102.9940  avg:  102.9937   ms
+n_step: 33   sim time:  0.0193359   sim timestep: 5.8594e-04  timestep time =   103.009 ms   total time =    8.0735 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.5219  max:   96.6029  avg:   95.9947   ms
+ Time Hydro               min:   98.0079  max:   98.0999  avg:   98.0483   ms
+ Time Boundaries          min:    5.0020  max:    5.0371  avg:    5.0181   ms
+ Time Total               min:  103.1549  max:  103.1580  avg:  103.1570   ms
+n_step: 34   sim time:  0.0199219   sim timestep: 5.8594e-04  timestep time =   103.171 ms   total time =    8.1774 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.0298  max:   96.4301  avg:   95.7010   ms
+ Time Hydro               min:   97.8520  max:   97.8861  avg:   97.8681   ms
+ Time Boundaries          min:    4.9980  max:    5.0330  avg:    5.0158   ms
+ Time Total               min:  102.9420  max:  102.9441  avg:  102.9431   ms
+n_step: 35   sim time:  0.0205078   sim timestep: 5.8594e-04  timestep time =   102.957 ms   total time =    8.2810 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2191  max:   96.5371  avg:   95.9710   ms
+ Time Hydro               min:   97.9440  max:   98.0101  avg:   97.9702   ms
+ Time Boundaries          min:    5.0080  max:    5.0459  avg:    5.0240   ms
+ Time Total               min:  103.0760  max:  103.0800  avg:  103.0789   ms
+n_step: 36   sim time:  0.0210937   sim timestep: 5.8594e-04  timestep time =   103.095 ms   total time =    8.3848 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.0589  max:   96.6489  avg:   96.0141   ms
+ Time Hydro               min:   98.0611  max:   98.1491  avg:   98.0985   ms
+ Time Boundaries          min:    5.0080  max:    5.0452  avg:    5.0175   ms
+ Time Total               min:  103.2162  max:  103.2190  avg:  103.2181   ms
+n_step: 37   sim time:  0.0216797   sim timestep: 5.8594e-04  timestep time =   103.231 ms   total time =    8.4887 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4649  max:   96.7681  avg:   95.9717   ms
+ Time Hydro               min:   98.1710  max:   98.2339  avg:   98.2013   ms
+ Time Boundaries          min:    5.0101  max:    5.0449  avg:    5.0194   ms
+ Time Total               min:  103.3020  max:  103.3041  avg:  103.3030   ms
+n_step: 38   sim time:  0.0222656   sim timestep: 5.8594e-04  timestep time =   103.320 ms   total time =    8.5927 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3100  max:   96.8680  avg:   95.9544   ms
+ Time Hydro               min:   98.2740  max:   98.3219  avg:   98.3051   ms
+ Time Boundaries          min:    5.0070  max:    5.0361  avg:    5.0167   ms
+ Time Total               min:  103.3790  max:  103.3812  avg:  103.3805   ms
+n_step: 39   sim time:  0.0228515   sim timestep: 5.8594e-04  timestep time =   103.393 ms   total time =    8.6967 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3939  max:   96.4680  avg:   95.9224   ms
+ Time Hydro               min:   97.8680  max:   97.9381  avg:   97.9045   ms
+ Time Boundaries          min:    5.0061  max:    5.0442  avg:    5.0238   ms
+ Time Total               min:  103.0049  max:  103.0071  avg:  103.0067   ms
+n_step: 40   sim time:  0.0234375   sim timestep: 5.8594e-04  timestep time =   103.021 ms   total time =    8.8004 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.1180  max:   96.5161  avg:   95.7961   ms
+ Time Hydro               min:   97.9090  max:   98.0561  avg:   97.9733   ms
+ Time Boundaries          min:    5.0142  max:    5.0399  avg:    5.0273   ms
+ Time Total               min:  103.1129  max:  103.1160  avg:  103.1148   ms
+n_step: 41   sim time:  0.0240234   sim timestep: 5.8594e-04  timestep time =   103.133 ms   total time =    8.9042 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2749  max:   96.4911  avg:   95.8971   ms
+ Time Hydro               min:   97.8992  max:   97.9621  avg:   97.9337   ms
+ Time Boundaries          min:    5.0280  max:    5.0631  avg:    5.0446   ms
+ Time Total               min:  103.0428  max:  103.0459  avg:  103.0444   ms
+n_step: 42   sim time:  0.0246094   sim timestep: 5.8594e-04  timestep time =   103.058 ms   total time =    9.0080 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3438  max:   96.6098  avg:   95.9421   ms
+ Time Hydro               min:   98.0179  max:   98.0868  avg:   98.0556   ms
+ Time Boundaries          min:    4.9970  max:    5.0271  avg:    5.0115   ms
+ Time Total               min:  103.1339  max:  103.1380  avg:  103.1371   ms
+n_step: 43   sim time:  0.0251953   sim timestep: 5.8594e-04  timestep time =   103.154 ms   total time =    9.1118 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   94.9969  max:   96.6699  avg:   96.0266   ms
+ Time Hydro               min:   98.0759  max:   98.1450  avg:   98.1119   ms
+ Time Boundaries          min:    5.0211  max:    5.0499  avg:    5.0346   ms
+ Time Total               min:  103.2162  max:  103.2181  avg:  103.2177   ms
+n_step: 44   sim time:  0.0257812   sim timestep: 5.8594e-04  timestep time =   103.233 ms   total time =    9.2157 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.1180  max:   96.5359  avg:   95.8327   ms
+ Time Hydro               min:   97.9459  max:   97.9960  avg:   97.9744   ms
+ Time Boundaries          min:    5.0068  max:    5.0402  avg:    5.0189   ms
+ Time Total               min:  103.0540  max:  103.0560  avg:  103.0555   ms
+n_step: 45   sim time:  0.0263672   sim timestep: 5.8594e-04  timestep time =   103.073 ms   total time =    9.3195 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2799  max:   96.4341  avg:   95.9493   ms
+ Time Hydro               min:   97.8451  max:   97.9030  avg:   97.8633   ms
+ Time Boundaries          min:    5.0080  max:    5.0361  avg:    5.0213   ms
+ Time Total               min:  102.9592  max:  102.9611  avg:  102.9605   ms
+n_step: 46   sim time:  0.0269531   sim timestep: 5.8594e-04  timestep time =   102.976 ms   total time =    9.4231 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.5520  max:   96.5531  avg:   96.0357   ms
+ Time Hydro               min:   97.9710  max:   98.0260  avg:   97.9919   ms
+ Time Boundaries          min:    5.0201  max:    5.0521  avg:    5.0357   ms
+ Time Total               min:  103.0941  max:  103.0960  avg:  103.0957   ms
+n_step: 47   sim time:  0.0275390   sim timestep: 5.8594e-04  timestep time =   103.110 ms   total time =    9.5269 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.1130  max:   96.8370  avg:   95.9614   ms
+ Time Hydro               min:   98.2351  max:   98.3050  avg:   98.2758   ms
+ Time Boundaries          min:    5.0080  max:    5.0349  avg:    5.0172   ms
+ Time Total               min:  103.3561  max:  103.3590  avg:  103.3583   ms
+n_step: 48   sim time:  0.0281250   sim timestep: 5.8594e-04  timestep time =   103.374 ms   total time =    9.6310 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3491  max:   96.5741  avg:   95.9169   ms
+ Time Hydro               min:   97.9750  max:   98.0520  avg:   98.0031   ms
+ Time Boundaries          min:    5.0151  max:    5.0461  avg:    5.0291   ms
+ Time Total               min:  103.1148  max:  103.1170  avg:  103.1163   ms
+n_step: 49   sim time:  0.0287109   sim timestep: 5.8594e-04  timestep time =   103.131 ms   total time =    9.7348 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3140  max:   96.3769  avg:   95.8556   ms
+ Time Hydro               min:   97.7850  max:   97.8470  avg:   97.8120   ms
+ Time Boundaries          min:    5.0211  max:    5.0499  avg:    5.0325   ms
+ Time Total               min:  102.9170  max:  102.9201  avg:  102.9188   ms
+n_step: 50   sim time:  0.0292968   sim timestep: 5.8594e-04  timestep time =   102.933 ms   total time =    9.8384 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2568  max:   96.5650  avg:   95.9131   ms
+ Time Hydro               min:   97.9819  max:   98.0198  avg:   97.9954   ms
+ Time Boundaries          min:    5.0008  max:    5.0309  avg:    5.0102   ms
+ Time Total               min:  103.0669  max:  103.0700  avg:  103.0690   ms
+n_step: 51   sim time:  0.0298828   sim timestep: 5.8594e-04  timestep time =   103.084 ms   total time =    9.9422 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2029  max:   96.4811  avg:   95.8128   ms
+ Time Hydro               min:   97.8940  max:   97.9609  avg:   97.9152   ms
+ Time Boundaries          min:    5.0080  max:    5.0399  avg:    5.0204   ms
+ Time Total               min:  103.0211  max:  103.0231  avg:  103.0223   ms
+n_step: 52   sim time:  0.0304687   sim timestep: 5.8594e-04  timestep time =   103.039 ms   total time =   10.0459 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3758  max:   96.5099  avg:   95.8893   ms
+ Time Hydro               min:   97.9412  max:   97.9788  avg:   97.9556   ms
+ Time Boundaries          min:    5.0168  max:    5.0299  avg:    5.0244   ms
+ Time Total               min:  103.0290  max:  103.0319  avg:  103.0310   ms
+n_step: 53   sim time:  0.0310547   sim timestep: 5.8594e-04  timestep time =   103.044 ms   total time =   10.1496 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   94.9829  max:   96.7970  avg:   95.8865   ms
+ Time Hydro               min:   98.2008  max:   98.2740  avg:   98.2250   ms
+ Time Boundaries          min:    5.0030  max:    5.0409  avg:    5.0210   ms
+ Time Total               min:  103.3351  max:  103.3380  avg:  103.3376   ms
+n_step: 54   sim time:  0.0316406   sim timestep: 5.8594e-04  timestep time =   103.351 ms   total time =   10.2536 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4001  max:   96.5049  avg:   95.7898   ms
+ Time Hydro               min:   97.9221  max:   97.9710  avg:   97.9465   ms
+ Time Boundaries          min:    5.0120  max:    5.0559  avg:    5.0290   ms
+ Time Total               min:  103.0440  max:  103.0462  avg:  103.0455   ms
+n_step: 55   sim time:  0.0322265   sim timestep: 5.8594e-04  timestep time =   103.060 ms   total time =   10.3574 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.0229  max:   96.3829  avg:   95.8785   ms
+ Time Hydro               min:   97.8019  max:   97.8649  avg:   97.8324   ms
+ Time Boundaries          min:    5.0008  max:    5.0390  avg:    5.0133   ms
+ Time Total               min:  102.9229  max:  102.9251  avg:  102.9247   ms
+n_step: 56   sim time:  0.0328125   sim timestep: 5.8594e-04  timestep time =   102.940 ms   total time =   10.4610 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.0840  max:   96.7209  avg:   95.8725   ms
+ Time Hydro               min:   98.1331  max:   98.1839  avg:   98.1614   ms
+ Time Boundaries          min:    5.0011  max:    5.0330  avg:    5.0127   ms
+ Time Total               min:  103.2360  max:  103.2381  avg:  103.2375   ms
+n_step: 57   sim time:  0.0333984   sim timestep: 5.8594e-04  timestep time =   103.252 ms   total time =   10.5649 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2821  max:   96.7350  avg:   95.9585   ms
+ Time Hydro               min:   98.1522  max:   98.2161  avg:   98.1766   ms
+ Time Boundaries          min:    5.0089  max:    5.0402  avg:    5.0249   ms
+ Time Total               min:  103.2751  max:  103.2770  avg:  103.2763   ms
+n_step: 58   sim time:  0.0339843   sim timestep: 5.8594e-04  timestep time =   103.291 ms   total time =   10.6689 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3870  max:   96.4220  avg:   95.8533   ms
+ Time Hydro               min:   97.8301  max:   97.9202  avg:   97.8699   ms
+ Time Boundaries          min:    5.0180  max:    5.0471  avg:    5.0321   ms
+ Time Total               min:  102.9871  max:  102.9892  avg:  102.9887   ms
+n_step: 59   sim time:  0.0345703   sim timestep: 5.8594e-04  timestep time =   103.006 ms   total time =   10.7726 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3550  max:   97.0681  avg:   96.2331   ms
+ Time Hydro               min:   98.4771  max:   98.5210  avg:   98.5075   ms
+ Time Boundaries          min:    4.9961  max:    5.0361  avg:    5.0142   ms
+ Time Total               min:  103.5810  max:  103.5838  avg:  103.5827   ms
+n_step: 60   sim time:  0.0351562   sim timestep: 5.8594e-04  timestep time =   103.595 ms   total time =   10.8768 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2709  max:   96.7150  avg:   95.9843   ms
+ Time Hydro               min:   98.1140  max:   98.1650  avg:   98.1357   ms
+ Time Boundaries          min:    5.0259  max:    5.0550  avg:    5.0361   ms
+ Time Total               min:  103.2360  max:  103.2391  avg:  103.2382   ms
+n_step: 61   sim time:  0.0357422   sim timestep: 5.8594e-04  timestep time =   103.252 ms   total time =   10.9807 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.0689  max:   96.6809  avg:   95.8824   ms
+ Time Hydro               min:   98.0990  max:   98.1460  avg:   98.1195   ms
+ Time Boundaries          min:    5.0099  max:    5.0459  avg:    5.0256   ms
+ Time Total               min:  103.2121  max:  103.2140  avg:  103.2138   ms
+n_step: 62   sim time:  0.0363281   sim timestep: 5.8594e-04  timestep time =   103.228 ms   total time =   11.0846 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4020  max:   96.8521  avg:   96.1149   ms
+ Time Hydro               min:   98.2490  max:   98.3331  avg:   98.2889   ms
+ Time Boundaries          min:    5.0058  max:    5.0511  avg:    5.0265   ms
+ Time Total               min:  103.4009  max:  103.4040  avg:  103.4029   ms
+n_step: 63   sim time:  0.0369140   sim timestep: 5.8594e-04  timestep time =   103.417 ms   total time =   11.1887 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4092  max:   96.5931  avg:   95.8892   ms
+ Time Hydro               min:   97.9891  max:   98.0661  avg:   98.0383   ms
+ Time Boundaries          min:    5.0151  max:    5.0521  avg:    5.0307   ms
+ Time Total               min:  103.1380  max:  103.1408  avg:  103.1400   ms
+n_step: 64   sim time:  0.0375000   sim timestep: 5.8594e-04  timestep time =   103.155 ms   total time =   11.2926 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4130  max:   97.2219  avg:   96.1252   ms
+ Time Hydro               min:   98.6390  max:   98.6919  avg:   98.6668   ms
+ Time Boundaries          min:    4.9920  max:    5.0261  avg:    5.0035   ms
+ Time Total               min:  103.7362  max:  103.7381  avg:  103.7371   ms
+n_step: 65   sim time:  0.0380859   sim timestep: 5.8594e-04  timestep time =   103.752 ms   total time =   11.3970 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.5992  max:   96.5352  avg:   96.0182   ms
+ Time Hydro               min:   97.9071  max:   98.0401  avg:   97.9948   ms
+ Time Boundaries          min:    5.0092  max:    5.0402  avg:    5.0237   ms
+ Time Total               min:  103.0989  max:  103.1010  avg:  103.1002   ms
+n_step: 66   sim time:  0.0386718   sim timestep: 5.8594e-04  timestep time =   103.118 ms   total time =   11.5008 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3250  max:   96.4649  avg:   95.8600   ms
+ Time Hydro               min:   97.8770  max:   97.9691  avg:   97.9076   ms
+ Time Boundaries          min:    5.0051  max:    5.0349  avg:    5.0144   ms
+ Time Total               min:  103.0221  max:  103.0250  avg:  103.0236   ms
+n_step: 67   sim time:  0.0392578   sim timestep: 5.8594e-04  timestep time =   103.038 ms   total time =   11.6045 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2411  max:   96.2970  avg:   95.8269   ms
+ Time Hydro               min:   97.7001  max:   97.7740  avg:   97.7318   ms
+ Time Boundaries          min:    5.0049  max:    5.0440  avg:    5.0217   ms
+ Time Total               min:  102.8349  max:  102.8371  avg:  102.8366   ms
+n_step: 68   sim time:  0.0398437   sim timestep: 5.8594e-04  timestep time =   102.851 ms   total time =   11.7080 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4740  max:   96.5981  avg:   95.9577   ms
+ Time Hydro               min:   97.9791  max:   98.1150  avg:   98.0353   ms
+ Time Boundaries          min:    5.0080  max:    5.0371  avg:    5.0217   ms
+ Time Total               min:  103.1690  max:  103.1721  avg:  103.1711   ms
+n_step: 69   sim time:  0.0404297   sim timestep: 5.8594e-04  timestep time =   103.186 ms   total time =   11.8119 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3059  max:   96.4370  avg:   95.9280   ms
+ Time Hydro               min:   97.8298  max:   97.9018  avg:   97.8649   ms
+ Time Boundaries          min:    5.0120  max:    5.0399  avg:    5.0214   ms
+ Time Total               min:  102.9592  max:  102.9620  avg:  102.9614   ms
+n_step: 70   sim time:  0.0410156   sim timestep: 5.8594e-04  timestep time =   102.976 ms   total time =   11.9156 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3670  max:   96.5500  avg:   95.9798   ms
+ Time Hydro               min:   97.9559  max:   98.0160  avg:   97.9834   ms
+ Time Boundaries          min:    5.0070  max:    5.0359  avg:    5.0169   ms
+ Time Total               min:  103.0731  max:  103.0750  avg:  103.0744   ms
+n_step: 71   sim time:  0.0416015   sim timestep: 5.8594e-04  timestep time =   103.090 ms   total time =   12.0193 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3500  max:   96.4148  avg:   95.8345   ms
+ Time Hydro               min:   97.8129  max:   97.9049  avg:   97.8482   ms
+ Time Boundaries          min:    5.0001  max:    5.0390  avg:    5.0170   ms
+ Time Total               min:  102.9651  max:  102.9670  avg:  102.9668   ms
+n_step: 72   sim time:  0.0421875   sim timestep: 5.8594e-04  timestep time =   102.981 ms   total time =   12.1230 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3021  max:   96.4100  avg:   95.9468   ms
+ Time Hydro               min:   97.8291  max:   97.9240  avg:   97.8685   ms
+ Time Boundaries          min:    5.0061  max:    5.0380  avg:    5.0219   ms
+ Time Total               min:  102.9799  max:  102.9820  avg:  102.9815   ms
+n_step: 73   sim time:  0.0427734   sim timestep: 5.8594e-04  timestep time =   102.998 ms   total time =   12.2267 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   94.8350  max:   96.4961  avg:   95.8731   ms
+ Time Hydro               min:   97.9030  max:   97.9869  avg:   97.9424   ms
+ Time Boundaries          min:    5.0011  max:    5.0321  avg:    5.0167   ms
+ Time Total               min:  103.0378  max:  103.0412  avg:  103.0398   ms
+n_step: 74   sim time:  0.0433593   sim timestep: 5.8594e-04  timestep time =   103.054 ms   total time =   12.3304 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3071  max:   96.2760  avg:   95.7834   ms
+ Time Hydro               min:   97.6722  max:   97.7650  avg:   97.7194   ms
+ Time Boundaries          min:    5.0142  max:    5.0390  avg:    5.0222   ms
+ Time Total               min:  102.8230  max:  102.8259  avg:  102.8248   ms
+n_step: 75   sim time:  0.0439453   sim timestep: 5.8594e-04  timestep time =   102.839 ms   total time =   12.4339 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.0949  max:   96.8800  avg:   95.8286   ms
+ Time Hydro               min:   98.2881  max:   98.3539  avg:   98.3153   ms
+ Time Boundaries          min:    5.0011  max:    5.0371  avg:    5.0121   ms
+ Time Total               min:  103.4091  max:  103.4110  avg:  103.4102   ms
+n_step: 76   sim time:  0.0445312   sim timestep: 5.8594e-04  timestep time =   103.427 ms   total time =   12.5380 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3629  max:   96.7720  avg:   95.9765   ms
+ Time Hydro               min:   98.1820  max:   98.2211  avg:   98.2057   ms
+ Time Boundaries          min:    5.0030  max:    5.0371  avg:    5.0188   ms
+ Time Total               min:  103.2779  max:  103.2801  avg:  103.2797   ms
+n_step: 77   sim time:  0.0451171   sim timestep: 5.8594e-04  timestep time =   103.296 ms   total time =   12.6420 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.5272  max:   96.9551  avg:   96.0592   ms
+ Time Hydro               min:   98.3531  max:   98.4280  avg:   98.3970   ms
+ Time Boundaries          min:    5.0049  max:    5.0349  avg:    5.0132   ms
+ Time Total               min:  103.4799  max:  103.4832  avg:  103.4821   ms
+n_step: 78   sim time:  0.0457031   sim timestep: 5.8594e-04  timestep time =   103.499 ms   total time =   12.7462 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.5362  max:   96.6592  avg:   96.2076   ms
+ Time Hydro               min:   98.0542  max:   98.1350  avg:   98.1000   ms
+ Time Boundaries          min:    5.0020  max:    5.0359  avg:    5.0200   ms
+ Time Total               min:  103.1899  max:  103.1921  avg:  103.1918   ms
+n_step: 79   sim time:  0.0462890   sim timestep: 5.8594e-04  timestep time =   103.206 ms   total time =   12.8501 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4299  max:   96.5459  avg:   95.9568   ms
+ Time Hydro               min:   97.9600  max:   98.0279  avg:   97.9909   ms
+ Time Boundaries          min:    5.0061  max:    5.0411  avg:    5.0210   ms
+ Time Total               min:  103.0860  max:  103.0879  avg:  103.0871   ms
+n_step: 80   sim time:  0.0468750   sim timestep: 5.8594e-04  timestep time =   103.104 ms   total time =   12.9539 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3660  max:   96.9081  avg:   96.1068   ms
+ Time Hydro               min:   98.3062  max:   98.3889  avg:   98.3423   ms
+ Time Boundaries          min:    5.0139  max:    5.0449  avg:    5.0296   ms
+ Time Total               min:  103.4529  max:  103.4548  avg:  103.4540   ms
+n_step: 81   sim time:  0.0474609   sim timestep: 5.8594e-04  timestep time =   103.469 ms   total time =   13.0580 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.0079  max:   96.5910  avg:   95.9347   ms
+ Time Hydro               min:   97.9819  max:   98.0411  avg:   98.0159   ms
+ Time Boundaries          min:    4.9970  max:    5.0392  avg:    5.0150   ms
+ Time Total               min:  103.0979  max:  103.1010  avg:  103.1004   ms
+n_step: 82   sim time:  0.0480468   sim timestep: 5.8594e-04  timestep time =   103.119 ms   total time =   13.1618 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2692  max:   96.8621  avg:   96.0536   ms
+ Time Hydro               min:   98.2730  max:   98.3860  avg:   98.3237   ms
+ Time Boundaries          min:    5.0161  max:    5.0480  avg:    5.0264   ms
+ Time Total               min:  103.4539  max:  103.4570  avg:  103.4553   ms
+n_step: 83   sim time:  0.0486328   sim timestep: 5.8594e-04  timestep time =   103.473 ms   total time =   13.2659 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2089  max:   96.6089  avg:   95.9475   ms
+ Time Hydro               min:   98.0122  max:   98.0792  avg:   98.0503   ms
+ Time Boundaries          min:    5.0159  max:    5.0452  avg:    5.0300   ms
+ Time Total               min:  103.1439  max:  103.1461  avg:  103.1457   ms
+n_step: 84   sim time:  0.0492187   sim timestep: 5.8594e-04  timestep time =   103.160 ms   total time =   13.3698 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2079  max:   96.5159  avg:   95.9052   ms
+ Time Hydro               min:   97.9099  max:   98.0048  avg:   97.9581   ms
+ Time Boundaries          min:    5.0189  max:    5.0640  avg:    5.0373   ms
+ Time Total               min:  103.0881  max:  103.0900  avg:  103.0895   ms
+n_step: 85   sim time:  0.0498046   sim timestep: 5.8594e-04  timestep time =   103.108 ms   total time =   13.4736 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2320  max:   96.6680  avg:   95.9628   ms
+ Time Hydro               min:   98.0592  max:   98.1350  avg:   98.1006   ms
+ Time Boundaries          min:    5.0051  max:    5.0271  avg:    5.0123   ms
+ Time Total               min:  103.1821  max:  103.1849  avg:  103.1843   ms
+n_step: 86   sim time:  0.0503906   sim timestep: 5.8594e-04  timestep time =   103.200 ms   total time =   13.5774 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4399  max:   96.7090  avg:   96.0189   ms
+ Time Hydro               min:   98.1150  max:   98.1879  avg:   98.1535   ms
+ Time Boundaries          min:    5.0049  max:    5.0402  avg:    5.0219   ms
+ Time Total               min:  103.2541  max:  103.2560  avg:  103.2554   ms
+n_step: 87   sim time:  0.0509765   sim timestep: 5.8594e-04  timestep time =   103.271 ms   total time =   13.6814 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.3300  max:   96.5579  avg:   95.9288   ms
+ Time Hydro               min:   97.9421  max:   98.0351  avg:   97.9877   ms
+ Time Boundaries          min:    5.0080  max:    5.0440  avg:    5.0236   ms
+ Time Total               min:  103.0989  max:  103.1001  avg:  103.0994   ms
+n_step: 88   sim time:  0.0515625   sim timestep: 5.8594e-04  timestep time =   103.114 ms   total time =   13.7852 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.5451  max:   96.4420  avg:   95.9768   ms
+ Time Hydro               min:   97.8429  max:   97.9309  avg:   97.8842   ms
+ Time Boundaries          min:    4.9999  max:    5.0340  avg:    5.0113   ms
+ Time Total               min:  102.9811  max:  102.9830  avg:  102.9824   ms
+n_step: 89   sim time:  0.0521484   sim timestep: 5.8594e-04  timestep time =   103.000 ms   total time =   13.8889 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.5751  max:   96.6611  avg:   96.2456   ms
+ Time Hydro               min:   98.0411  max:   98.1240  avg:   98.0827   ms
+ Time Boundaries          min:    5.0049  max:    5.0509  avg:    5.0252   ms
+ Time Total               min:  103.1940  max:  103.1959  avg:  103.1957   ms
+n_step: 90   sim time:  0.0527343   sim timestep: 5.8594e-04  timestep time =   103.211 ms   total time =   13.9927 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.0110  max:   96.6070  avg:   95.9768   ms
+ Time Hydro               min:   98.0079  max:   98.1228  avg:   98.0487   ms
+ Time Boundaries          min:    5.0099  max:    5.0380  avg:    5.0244   ms
+ Time Total               min:  103.1790  max:  103.1811  avg:  103.1806   ms
+n_step: 91   sim time:  0.0533203   sim timestep: 5.8594e-04  timestep time =   103.196 ms   total time =   14.0966 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.1159  max:   96.1499  avg:   95.7941   ms
+ Time Hydro               min:   97.5659  max:   97.6760  avg:   97.6042   ms
+ Time Boundaries          min:    5.0039  max:    5.0378  avg:    5.0204   ms
+ Time Total               min:  102.7360  max:  102.7379  avg:  102.7374   ms
+n_step: 92   sim time:  0.0539062   sim timestep: 5.8594e-04  timestep time =   102.753 ms   total time =   14.2001 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.7539  max:   96.2701  avg:   96.0370   ms
+ Time Hydro               min:   97.6620  max:   97.7409  avg:   97.7102   ms
+ Time Boundaries          min:    5.0180  max:    5.0449  avg:    5.0313   ms
+ Time Total               min:  102.8030  max:  102.8061  avg:  102.8049   ms
+n_step: 93   sim time:  0.0544921   sim timestep: 5.8594e-04  timestep time =   102.819 ms   total time =   14.3035 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.0480  max:   96.4849  avg:   95.8372   ms
+ Time Hydro               min:   97.8830  max:   97.9829  avg:   97.9307   ms
+ Time Boundaries          min:    5.0070  max:    5.0449  avg:    5.0234   ms
+ Time Total               min:  103.0450  max:  103.0469  avg:  103.0461   ms
+n_step: 94   sim time:  0.0550781   sim timestep: 5.8594e-04  timestep time =   103.067 ms   total time =   14.4073 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4309  max:   96.8299  avg:   96.0531   ms
+ Time Hydro               min:   98.2339  max:   98.3210  avg:   98.2708   ms
+ Time Boundaries          min:    5.0161  max:    5.0490  avg:    5.0316   ms
+ Time Total               min:  103.3921  max:  103.3950  avg:  103.3940   ms
+n_step: 95   sim time:  0.0556640   sim timestep: 5.8594e-04  timestep time =   103.408 ms   total time =   14.5114 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.1221  max:   96.8430  avg:   96.0681   ms
+ Time Hydro               min:   98.2580  max:   98.3250  avg:   98.2996   ms
+ Time Boundaries          min:    5.0149  max:    5.0511  avg:    5.0327   ms
+ Time Total               min:  103.3928  max:  103.3950  avg:  103.3944   ms
+n_step: 96   sim time:  0.0562499   sim timestep: 5.8594e-04  timestep time =   103.409 ms   total time =   14.6155 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.1819  max:   96.8080  avg:   95.9351   ms
+ Time Hydro               min:   98.2060  max:   98.2819  avg:   98.2406   ms
+ Time Boundaries          min:    5.0020  max:    5.0371  avg:    5.0195   ms
+ Time Total               min:  103.3390  max:  103.3411  avg:  103.3403   ms
+n_step: 97   sim time:  0.0568359   sim timestep: 5.8594e-04  timestep time =   103.356 ms   total time =   14.7195 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2411  max:   96.9381  avg:   96.0270   ms
+ Time Hydro               min:   98.3422  max:   98.4271  avg:   98.3892   ms
+ Time Boundaries          min:    5.0058  max:    5.0361  avg:    5.0229   ms
+ Time Total               min:  103.4820  max:  103.4839  avg:  103.4831   ms
+n_step: 98   sim time:  0.0574218   sim timestep: 5.8594e-04  timestep time =   103.498 ms   total time =   14.8237 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2730  max:   96.7200  avg:   96.0890   ms
+ Time Hydro               min:   98.1190  max:   98.2020  avg:   98.1665   ms
+ Time Boundaries          min:    5.0020  max:    5.0368  avg:    5.0126   ms
+ Time Total               min:  103.2550  max:  103.2591  avg:  103.2579   ms
+n_step: 99   sim time:  0.0580078   sim timestep: 5.8594e-04  timestep time =   103.273 ms   total time =   14.9276 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2010  max:   96.9250  avg:   95.9855   ms
+ Time Hydro               min:   98.3369  max:   98.4061  avg:   98.3675   ms
+ Time Boundaries          min:    4.9968  max:    5.0330  avg:    5.0095   ms
+ Time Total               min:  103.4620  max:  103.4641  avg:  103.4634   ms
+n_step: 100   sim time:  0.0585937   sim timestep: 5.8594e-04  timestep time =   103.480 ms   total time =   15.0318 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.2001  max:   96.9062  avg:   96.0451   ms
+ Time Hydro               min:   98.3362  max:   98.3810  avg:   98.3571   ms
+ Time Boundaries          min:    5.0061  max:    5.0359  avg:    5.0209   ms
+ Time Total               min:  103.4350  max:  103.4381  avg:  103.4374   ms
+n_step: 101   sim time:  0.0591796   sim timestep: 5.8594e-04  timestep time =   103.454 ms   total time =   15.1359 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.4421  max:   96.5209  avg:   95.9987   ms
+ Time Hydro               min:   97.9500  max:   98.0129  avg:   97.9818   ms
+ Time Boundaries          min:    5.0089  max:    5.0380  avg:    5.0227   ms
+ Time Total               min:  103.0731  max:  103.0760  avg:  103.0751   ms
+n_step: 102   sim time:  0.0597656   sim timestep: 5.8594e-04  timestep time =   103.091 ms   total time =   15.2397 s
+
+Global maximum magnetic divergence = 0.0000e+00
+ Time Hydro_Integrator    min:   95.7000  max:   96.5798  avg:   96.1202   ms
+ Time Hydro               min:   97.9860  max:   98.0282  avg:   98.0088   ms
+ Time Boundaries          min:    5.0070  max:    5.0321  avg:    5.0150   ms
+ Time Total               min:  103.0779  max:  103.0810  avg:  103.0797   ms
+n_step: 103   sim time:  0.0600000   sim timestep: 2.3443e-04  timestep time =   103.094 ms   total time =   15.3435 s
+
+
+Saving Snapshot: 1 
+Global maximum magnetic divergence = 0.0000e+00
+
+Average Times      n_steps:103
+ Time Hydro_Integrator    avg:   96.6214   ms
+ Time Hydro               avg:   98.1046   ms
+ Time Boundaries          avg:    5.0422   ms
+ Time Total               avg:  103.1680   ms
+Writing timing values to file: run_timing.log  
+ Creating File: run_timing.log 
+Saved Timing: run_timing.log 
+
