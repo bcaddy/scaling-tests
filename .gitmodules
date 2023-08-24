@@ -7,3 +7,9 @@
 [submodule "data/2023-08-15/cholla"]
 	path = data/2023-08-15/cholla
 	url = https://github.com/cholla-hydro/cholla.git
+[submodule "data/2023-08-24-ppmc/cholla"]
+	path = data/2023-08-24-ppmc/cholla
+	url = https://github.com/cholla-hydro/cholla.git
+[submodule "data/2023-08-24-plmc/cholla"]
+	path = data/2023-08-24-plmc/cholla
+	url = https://github.com/cholla-hydro/cholla.git
