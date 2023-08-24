@@ -36,5 +36,5 @@ for resolution in resolutions:
                scaling_test_directory=script_path,
                job_name=job_name + str(resolution),
                mail_user=mail_user,
-               submit=True)
+               submit=False)
 
