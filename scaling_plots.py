@@ -16,7 +16,7 @@ matplotlib.rcParams['mathtext.rm'] = 'serif'
 # Load data
 def load_data():
     # Get paths
-    directory = str(input('Input directory name: ') or '2023-05-02-plmc')
+    directory = str(input('Input directory name: ') or '2023-08-11')
     data_path = pathlib.Path(__file__).parent.resolve() / 'data' / directory
     data_dirs = sorted(pathlib.Path(data_path).glob('ranks*'))
 
@@ -62,8 +62,8 @@ def Scaling_Plot(scaling_data, y_title, filename, plot, old_data, old_label_posi
 
     if 'Total' not in skipped_fields:
         ax = plot(scaling_data, 'Total', color_total, 'Total', ax, alpha, marker_size)
-    if 'MHD' not in skipped_fields:
-        ax = plot(scaling_data, 'MHD', color_mhd, 'MHD', ax, alpha, marker_size)
+    if 'Hydro_Integrator' not in skipped_fields:
+        ax = plot(scaling_data, 'Hydro_Integrator', color_mhd, 'MHD', ax, alpha, marker_size)
     if 'MPI Comm' not in skipped_fields:
         ax = plot(scaling_data, 'Boundaries', color_mpi, 'MPI Comm', ax, alpha, marker_size)
 
