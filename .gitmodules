@@ -13,3 +13,6 @@
 [submodule "data/2023-08-24-plmc/cholla"]
 	path = data/2023-08-24-plmc/cholla
 	url = https://github.com/cholla-hydro/cholla.git
+[submodule "data/2023-08-25-high-res-per-gpu/cholla"]
+	path = data/2023-08-25-high-res-per-gpu/cholla
+	url = https://github.com/bcaddy/cholla.git

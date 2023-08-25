@@ -21,7 +21,7 @@ def ceildiv(a, b):
     """
     return -(a // -b)
 
-def compute_job_parameters(num_ranks):
+def compute_job_parameters(num_ranks, resolution_per_gpu):
     """Compute the number of nodes, resolution, and domain for the job
 
     Args:
@@ -43,7 +43,6 @@ def compute_job_parameters(num_ranks):
     # Determine the resolution with the given resolution per gpu. Note that this
     # is the resolution per side, not total. So the actual number of cells is
     # resolution_per_gpu^3
-    resolution_per_gpu = 256
     resolution         = int(resolution_per_gpu * cube_root_rounded)
 
     # Determine the domain length with the given length per gpu. Note that this
@@ -128,9 +127,10 @@ def make_cholla_command(executable_path, input_file, resolution, domain_length, 
 
     return command, output_directory
 
-def submit_job(account, time, num_ranks, executable_path, input_file, scaling_test_directory, job_name=None, mail_user=None, submit=False):
+def submit_job(account, time, num_ranks, executable_path, input_file, scaling_test_directory,
+               job_name=None, mail_user=None, submit=False, resolution_per_gpu = 256):
 
-    num_nodes, resolution, domain_length = compute_job_parameters(num_ranks)
+    num_nodes, resolution, domain_length = compute_job_parameters(num_ranks,resolution_per_gpu)
 
     srun_command = make_srun_command(num_nodes, num_ranks)
 
