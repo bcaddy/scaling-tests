@@ -1,0 +1,7 @@
+
+Run date: Fri Aug 25 16:40:39 2023
+Git Commit Hash = 4a2266789b29574ea9c943f964ae0cf70c2145c5
+Macro Flags     = -DCUDA -DMPI_CHOLLA -DPRECISION=2 -DPPMC -DHLLD -DMHD -DVL -DDENSITY_FLOOR -DTEMPERATURE_FLOOR -DCPU_TIME -DHDF5 -DMPI_GPU -DO_HIP -DGIT_HASH=4a2266789b29574ea9c943f964ae0cf70c2145c5
+Initializing Simulation
+Starting calculations.
+Simulation completed successfully.
