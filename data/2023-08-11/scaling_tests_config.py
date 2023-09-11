@@ -26,15 +26,15 @@ job_name = 'cholla_mhd_scaling_test_'
 mail_user = 'r.caddy@pitt.edu'
 
 # Run the scaling Tests
-resolutions = [1, 8, 64, 512, 4096, 32768, 64000, 74088]
-for resolution in resolutions:
+num_ranks = [1, 8, 64, 512, 4096, 32768, 64000, 74088]
+for num_rank in num_ranks:
     submit_job(account='csc380',
                time='10',
-               num_ranks=resolution,
+               num_ranks=num_rank,
                executable_path=executable_path,
                input_file=input_file_path,
                scaling_test_directory=script_path,
-               job_name=job_name + str(resolution),
+               job_name=job_name + str(num_rank),
                mail_user=mail_user,
                submit=False)
 
