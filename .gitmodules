@@ -19,3 +19,6 @@
 [submodule "data/2023-09-18-high-res-plmc/cholla"]
 	path = data/2023-09-18-high-res-plmc/cholla
 	url = https://github.com/cholla-hydro/cholla.git
+[submodule "data/2023-09-20-high-res-plmc-identify-bad-ranks/cholla"]
+	path = data/2023-09-20-high-res-plmc-identify-bad-ranks/cholla
+	url = https://github.com/bcaddy/cholla.git

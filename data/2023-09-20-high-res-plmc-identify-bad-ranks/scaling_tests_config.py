@@ -37,5 +37,5 @@ for num_rank in num_ranks:
                job_name=job_name + str(num_rank),
                mail_user=mail_user,
                resolution_per_gpu=459,
-               submit=True)
+               submit=False)
 
