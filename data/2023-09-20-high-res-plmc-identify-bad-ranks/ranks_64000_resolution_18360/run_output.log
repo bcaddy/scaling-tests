@@ -5,3 +5,10 @@ Macro Flags     = -DCUDA -DMPI_CHOLLA -DPRECISION=2 -DPLMC -DHLLD -DMHD -DVL -DD
 Initializing Simulation
 Starting calculations.
 Simulation completed successfully.
+
+Run date: Fri Nov  3 14:04:07 2023
+Git Commit Hash = 5c22e143c996ae80cd5901c1e483e90a117a2f40
+Macro Flags     = -DCUDA -DMPI_CHOLLA -DPRECISION=2 -DPLMC -DHLLD -DMHD -DVL -DDENSITY_FLOOR -DTEMPERATURE_FLOOR -DCPU_TIME  -DMPI_GPU -DN_STEPS_LIMIT=100 -DO_HIP -DGIT_HASH=5c22e143c996ae80cd5901c1e483e90a117a2f40
+Initializing Simulation
+Starting calculations.
+Simulation completed successfully.

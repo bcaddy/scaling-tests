@@ -4,4 +4,6 @@ Note that the timers all skip the first time step since it always takes longer.
 To find the average time divide the time shown by n_steps-1
 
 #n_proc  nx  ny  nz  n_omp  n_steps  Hydro_Integrator  Hydro  Boundaries  Total   
-64000 18360 18360 18360 0 100 52117 53152.3 7419.12 60560.5 
+64000 18360 18360 18360 0 100 47234.3 48268.4 7605.12 55859.6 
+64000 18360 18360 18360 0 100 52117 53152.3 7419.12 60560.5
+
