@@ -8,6 +8,9 @@
 import pathlib
 import os
 
+# The list of underperforming nodes to exclude
+excluded_nodes = ["frontier00066","frontier00186","frontier00219","frontier00250","frontier00312","frontier00516","frontier00532","frontier00897","frontier00902","frontier00951","frontier04778","frontier05546","frontier05547","frontier05803","frontier05932","frontier06411","frontier06442","frontier06706"]
+
 def ceildiv(a, b):
     """Integer division that gives the ceiling result not the floor. Faster than math.ceil and doesn't run into any
     floating point precision issues.
@@ -77,7 +80,7 @@ def make_sbatch_command(account, time, nodes, output_directory, wrap, mail_user=
     else:
         job_name_flag = ''
 
-    return f"sbatch --account={account} --nodes={nodes} --time={time} {mail} {job_name_flag} --output={output_directory}/slurm-{job_name}.out --wrap='{wrap}'"
+    return f"sbatch --account={account} --nodes={nodes+len(excluded_nodes)} --time={time} {mail} {job_name_flag} --output={output_directory}/slurm-{job_name}.out --wrap='{wrap}'"
 
 def make_srun_command(num_nodes, num_ranks):
     """Generate the srun command to launch Cholla
@@ -89,7 +92,8 @@ def make_srun_command(num_nodes, num_ranks):
     Returns:
         string: The srun command
     """
-    return f'srun --nodes={num_nodes} --ntasks={num_ranks} --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest '
+
+    return f"srun --exclude={','.join(excluded_nodes)} --nodes={num_nodes} --ntasks={num_ranks} --cpus-per-task=7 --gpus-per-task=1 --gpu-bind=closest "
 
 def make_cholla_command(executable_path, input_file, resolution, domain_length, num_ranks, scaling_test_directory):
     """Generate the Cholla launch command

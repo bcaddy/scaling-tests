@@ -1,0 +1,841 @@
+Override with nx=23480
+Override with ny=23480
+Override with nz=23480
+Override with xlen=40.0
+Override with ylen=40.0
+Override with zlen=40.0
+Override with wave_length=40.0
+Override with outdir=/lustre/orion/ast181/proj-shared/rcaddy/scaling-tests/data/2024-03-12-fused-plmc/ranks_64000_resolution_23480/
+WARNING: temperature floor is set to its default value (zero)! It can be set to a different value in the input parameter file.
+WARNING: density floor is set to its default value (zero)! It can be set to a different value in the input parameter file.
+Git Commit Hash = 412a3657505d66ce5f806ea0cb6f6f0cc8d4c429
+Macro Flags     = -DMPI_CHOLLA -DPRECISION=2 -DPLMC -DHLLD -DMHD -DVL -DDENSITY_FLOOR -DTEMPERATURE_FLOOR -DCPU_TIME  -DMPI_GPU -DDISABLE_GPU_ERROR_CHECKING -DN_STEPS_LIMIT=100 -DO_HIP -DGIT_HASH=412a3657505d66ce5f806ea0cb6f6f0cc8d4c429
+Parameter values:  nx = 23480, ny = 23480, nz = 23480, tout = 0.060000, init = Linear_Wave, boundaries = 1 1 1 1 1 1
+Output directory:  /lustre/orion/ast181/proj-shared/rcaddy/scaling-tests/data/2024-03-12-fused-plmc/ranks_64000_resolution_23480/
+
+Creating Log File: run_output.log 
+
+nproc_x 40 nproc_y 40 nproc_z 40
+Allocating MPI communication buffers on GPU (nx = 11026208, ny = 11176480, nz = 11328800).
+Local number of grid cells: 587 587 587 210644875
+Setting initial conditions...
+Initial conditions set.
+
+Timing Functions is ON 
+Setting boundary conditions...
+Boundary conditions set.
+Dimensions of each cell: dx = 0.001704 dy = 0.001704 dz = 0.001704
+Ratio of specific heats gamma = 1.666667
+Nstep = 0  Simulation time = 0.000000
+Global maximum magnetic divergence = 0.0000e+00
+Init  min:   65.5534  max:   75.3862  avg:   72.2852
+Starting calculations.
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min: 2231.6651  max: 18897.8159  avg: 4187.4348   ms
+ Time Hydro               min: 18924.2001  max: 18928.0550  avg: 18925.7263   ms
+ Time Boundaries          min:   51.6188  max:  124.2690  avg:   98.8838   ms
+ Time Total               min: 19053.0131  max: 20526.1881  avg: 19785.7081   ms
+n_step: 1   sim time:  0.0002555   sim timestep: 2.5554e-04  timestep time = 19634.466 ms   total time =   96.1771 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  783.9849  max:  832.4409  avg:  807.1495   ms
+ Time Hydro               min:  857.5571  max:  861.1019  avg:  858.9542   ms
+ Time Boundaries          min:   53.2579  max:  124.6891  avg:   98.7542   ms
+ Time Total               min:  986.3789  max:  986.4142  avg:  986.3974   ms
+n_step: 2   sim time:  0.0005111   sim timestep: 2.5554e-04  timestep time =   986.639 ms   total time =   97.1739 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  772.9731  max:  825.4609  avg:  798.6445   ms
+ Time Hydro               min:  850.6410  max:  853.9600  avg:  851.9671   ms
+ Time Boundaries          min:   53.4880  max:  126.1320  avg:  100.4621   ms
+ Time Total               min:  980.6921  max:  980.7329  avg:  980.7148   ms
+n_step: 3   sim time:  0.0007666   sim timestep: 2.5554e-04  timestep time =   980.959 ms   total time =   98.1649 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  772.9120  max:  826.0491  avg:  798.7781   ms
+ Time Hydro               min:  851.3219  max:  854.7430  avg:  852.5653   ms
+ Time Boundaries          min:   51.4629  max:  123.7860  avg:   98.3027   ms
+ Time Total               min:  979.1119  max:  979.1479  avg:  979.1314   ms
+n_step: 4   sim time:  0.0010221   sim timestep: 2.5554e-04  timestep time =   979.361 ms   total time =   99.1545 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  773.8650  max:  824.4379  avg:  799.1048   ms
+ Time Hydro               min:  849.7319  max:  853.1539  avg:  850.9505   ms
+ Time Boundaries          min:   53.0710  max:  125.1602  avg:   99.5987   ms
+ Time Total               min:  978.9181  max:  978.9560  avg:  978.9365   ms
+n_step: 5   sim time:  0.0012777   sim timestep: 2.5554e-04  timestep time =   979.176 ms   total time =  100.1438 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  773.4439  max:  826.8149  avg:  799.4110   ms
+ Time Hydro               min:  852.0892  max:  855.9959  avg:  853.3274   ms
+ Time Boundaries          min:   52.9990  max:  124.4898  avg:  100.3141   ms
+ Time Total               min:  981.0638  max:  981.1010  avg:  981.0841   ms
+n_step: 6   sim time:  0.0015332   sim timestep: 2.5554e-04  timestep time =   981.321 ms   total time =  101.1352 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  772.7771  max:  827.2140  avg:  799.6200   ms
+ Time Hydro               min:  852.5262  max:  855.9570  avg:  853.7241   ms
+ Time Boundaries          min:   53.6761  max:  127.1679  avg:  100.9584   ms
+ Time Total               min:  983.7031  max:  983.7420  avg:  983.7256   ms
+n_step: 7   sim time:  0.0017888   sim timestep: 2.5554e-04  timestep time =   983.963 ms   total time =  102.1293 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.1971  max:  827.4500  avg:  799.8260   ms
+ Time Hydro               min:  852.7260  max:  856.2441  avg:  853.9612   ms
+ Time Boundaries          min:   53.6878  max:  126.1630  avg:  100.0664   ms
+ Time Total               min:  982.9988  max:  983.0399  avg:  983.0177   ms
+n_step: 8   sim time:  0.0020443   sim timestep: 2.5554e-04  timestep time =   983.257 ms   total time =  103.1227 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.3979  max:  827.1141  avg:  800.0252   ms
+ Time Hydro               min:  852.4141  max:  855.9580  avg:  853.6355   ms
+ Time Boundaries          min:   53.2880  max:  125.3462  avg:   99.5745   ms
+ Time Total               min:  981.8878  max:  981.9260  avg:  981.9074   ms
+n_step: 9   sim time:  0.0022998   sim timestep: 2.5554e-04  timestep time =   982.145 ms   total time =  104.1150 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  773.8960  max:  826.8361  avg:  800.1528   ms
+ Time Hydro               min:  852.1540  max:  855.4931  avg:  853.3562   ms
+ Time Boundaries          min:   54.1189  max:  126.2269  avg:   99.9319   ms
+ Time Total               min:  982.3081  max:  982.3511  avg:  982.3293   ms
+n_step: 10   sim time:  0.0025554   sim timestep: 2.5554e-04  timestep time =   982.570 ms   total time =  105.1078 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.2760  max:  826.2820  avg:  800.1873   ms
+ Time Hydro               min:  851.5770  max:  855.1211  avg:  852.7975   ms
+ Time Boundaries          min:   51.4548  max:  124.3279  avg:   99.7429   ms
+ Time Total               min:  980.0389  max:  980.0839  avg:  980.0619   ms
+n_step: 11   sim time:  0.0028109   sim timestep: 2.5554e-04  timestep time =   980.299 ms   total time =  106.0983 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.1570  max:  825.9470  avg:  800.2426   ms
+ Time Hydro               min:  851.2571  max:  854.6052  avg:  852.4638   ms
+ Time Boundaries          min:   51.5449  max:  123.4570  avg:   99.0719   ms
+ Time Total               min:  978.6499  max:  978.6861  avg:  978.6700   ms
+n_step: 12   sim time:  0.0030664   sim timestep: 2.5554e-04  timestep time =   978.905 ms   total time =  107.0874 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  773.8240  max:  826.8511  avg:  800.3491   ms
+ Time Hydro               min:  852.1481  max:  855.5222  avg:  853.3678   ms
+ Time Boundaries          min:   51.7681  max:  125.3190  avg:   98.8383   ms
+ Time Total               min:  981.4370  max:  981.4761  avg:  981.4583   ms
+n_step: 13   sim time:  0.0033220   sim timestep: 2.5554e-04  timestep time =   981.699 ms   total time =  108.0792 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.0900  max:  827.2090  avg:  800.3441   ms
+ Time Hydro               min:  852.5479  max:  855.8118  avg:  853.7247   ms
+ Time Boundaries          min:   51.1091  max:  124.1019  avg:   98.3430   ms
+ Time Total               min:  980.5090  max:  980.5489  avg:  980.5276   ms
+n_step: 14   sim time:  0.0035775   sim timestep: 2.5554e-04  timestep time =   980.774 ms   total time =  109.0701 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.0330  max:  827.4982  avg:  800.4407   ms
+ Time Hydro               min:  852.6471  max:  856.1211  avg:  854.0170   ms
+ Time Boundaries          min:   54.0409  max:  125.6909  avg:  100.0676   ms
+ Time Total               min:  982.4309  max:  982.4681  avg:  982.4487   ms
+n_step: 15   sim time:  0.0038330   sim timestep: 2.5554e-04  timestep time =   982.686 ms   total time =  110.0629 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.2891  max:  825.8638  avg:  800.4860   ms
+ Time Hydro               min:  851.0270  max:  854.5790  avg:  852.3933   ms
+ Time Boundaries          min:   53.0381  max:  126.9929  avg:  100.2829   ms
+ Time Total               min:  982.3089  max:  982.3551  avg:  982.3336   ms
+n_step: 16   sim time:  0.0040886   sim timestep: 2.5554e-04  timestep time =   982.577 ms   total time =  111.0558 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  773.9010  max:  826.4439  avg:  800.5707   ms
+ Time Hydro               min:  851.7690  max:  855.3088  avg:  852.9645   ms
+ Time Boundaries          min:   53.0360  max:  124.8729  avg:   99.2405   ms
+ Time Total               min:  980.7651  max:  980.8102  avg:  980.7906   ms
+n_step: 17   sim time:  0.0043441   sim timestep: 2.5554e-04  timestep time =   981.034 ms   total time =  112.0470 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  773.7548  max:  826.7360  avg:  800.5766   ms
+ Time Hydro               min:  852.1090  max:  855.6230  avg:  853.3268   ms
+ Time Boundaries          min:   52.0070  max:  125.9360  avg:   99.5842   ms
+ Time Total               min:  982.1420  max:  982.1861  avg:  982.1660   ms
+n_step: 18   sim time:  0.0045997   sim timestep: 2.5554e-04  timestep time =   982.424 ms   total time =  113.0397 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.1661  max:  826.2410  avg:  800.6178   ms
+ Time Hydro               min:  852.4339  max:  855.8509  avg:  853.6896   ms
+ Time Boundaries          min:   52.4979  max:  125.3400  avg:   99.4375   ms
+ Time Total               min:  981.8661  max:  982.1410  avg:  982.1194   ms
+n_step: 19   sim time:  0.0048552   sim timestep: 2.5554e-04  timestep time =   982.353 ms   total time =  114.0324 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.5540  max:  826.3230  avg:  800.6699   ms
+ Time Hydro               min:  851.5630  max:  855.3059  avg:  852.8497   ms
+ Time Boundaries          min:   53.5669  max:  124.3651  avg:  100.6871   ms
+ Time Total               min:  982.0311  max:  984.4842  avg:  984.4647   ms
+n_step: 20   sim time:  0.0051107   sim timestep: 2.5554e-04  timestep time =   984.704 ms   total time =  115.0272 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.9851  max:  827.7321  avg:  800.7695   ms
+ Time Hydro               min:  854.9020  max:  858.1462  avg:  856.1029   ms
+ Time Boundaries          min:   52.6772  max:  125.2129  avg:   99.5459   ms
+ Time Total               min:  986.8340  max:  986.8760  avg:  986.8587   ms
+n_step: 21   sim time:  0.0053663   sim timestep: 2.5554e-04  timestep time =   987.097 ms   total time =  116.0244 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.8170  max:  826.3259  avg:  800.7551   ms
+ Time Hydro               min:  851.5360  max:  855.1710  avg:  852.8442   ms
+ Time Boundaries          min:   53.4298  max:  126.5221  avg:   99.9931   ms
+ Time Total               min:  982.2800  max:  982.3239  avg:  982.3066   ms
+n_step: 22   sim time:  0.0056218   sim timestep: 2.5554e-04  timestep time =   985.572 ms   total time =  117.0201 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.7490  max:  826.8628  avg:  800.7676   ms
+ Time Hydro               min:  852.1729  max:  855.8691  avg:  853.3913   ms
+ Time Boundaries          min:   54.5719  max:  128.1502  avg:  101.8516   ms
+ Time Total               min:  984.5929  max:  984.6411  avg:  984.6202   ms
+n_step: 23   sim time:  0.0058773   sim timestep: 2.5554e-04  timestep time =   984.872 ms   total time =  118.0165 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  773.8171  max:  828.0280  avg:  800.8296   ms
+ Time Hydro               min:  853.3142  max:  856.6911  avg:  854.5457   ms
+ Time Boundaries          min:   52.0229  max:  125.8352  avg:   98.9984   ms
+ Time Total               min:  983.3159  max:  983.3641  avg:  983.3434   ms
+n_step: 24   sim time:  0.0061329   sim timestep: 2.5554e-04  timestep time =   983.586 ms   total time =  119.0104 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.4479  max:  827.6289  avg:  800.8370   ms
+ Time Hydro               min:  852.9770  max:  856.3149  avg:  854.1502   ms
+ Time Boundaries          min:   56.3040  max:  128.2980  avg:  102.5512   ms
+ Time Total               min:  986.3319  max:  986.3710  avg:  986.3510   ms
+n_step: 25   sim time:  0.0063884   sim timestep: 2.5554e-04  timestep time =   986.591 ms   total time =  120.0071 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.6439  max:  827.9390  avg:  800.8720   ms
+ Time Hydro               min:  853.2128  max:  856.9670  avg:  854.4540   ms
+ Time Boundaries          min:   53.5789  max:  126.7161  avg:   99.8013   ms
+ Time Total               min:  984.3240  max:  986.7351  avg:  986.7153   ms
+n_step: 26   sim time:  0.0066439   sim timestep: 2.5554e-04  timestep time =   986.957 ms   total time =  121.0043 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.7550  max:  826.6129  avg:  800.9140   ms
+ Time Hydro               min:  854.5511  max:  858.3050  avg:  855.7320   ms
+ Time Boundaries          min:   53.2591  max:  124.3000  avg:   99.7947   ms
+ Time Total               min:  985.4591  max:  985.5011  avg:  985.4826   ms
+n_step: 27   sim time:  0.0068995   sim timestep: 2.5554e-04  timestep time =   985.724 ms   total time =  122.0018 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.5008  max:  826.2360  avg:  800.9138   ms
+ Time Hydro               min:  851.5460  max:  855.6151  avg:  852.7553   ms
+ Time Boundaries          min:   55.2468  max:  127.0609  avg:  101.7770   ms
+ Time Total               min:  983.2778  max:  983.3190  avg:  983.2993   ms
+n_step: 28   sim time:  0.0071550   sim timestep: 2.5554e-04  timestep time =   983.536 ms   total time =  122.9967 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.3320  max:  828.0201  avg:  800.9895   ms
+ Time Hydro               min:  854.7871  max:  858.2850  avg:  856.0093   ms
+ Time Boundaries          min:   53.3540  max:  126.7631  avg:   99.9316   ms
+ Time Total               min:  988.9421  max:  992.0139  avg:  991.9460   ms
+n_step: 29   sim time:  0.0074106   sim timestep: 2.5554e-04  timestep time =   992.185 ms   total time =  123.9990 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.1058  max:  826.6699  avg:  800.9640   ms
+ Time Hydro               min:  851.9580  max:  855.9861  avg:  853.1974   ms
+ Time Boundaries          min:   53.6129  max:  125.8609  avg:  100.2976   ms
+ Time Total               min:  982.9409  max:  983.0520  avg:  982.9936   ms
+n_step: 30   sim time:  0.0076661   sim timestep: 2.5554e-04  timestep time =   983.228 ms   total time =  124.9937 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.4650  max:  826.3369  avg:  801.0360   ms
+ Time Hydro               min:  856.1790  max:  859.9341  avg:  857.4752   ms
+ Time Boundaries          min:   51.9629  max:  125.4091  avg:   98.7922   ms
+ Time Total               min:  985.9769  max:  986.5289  avg:  986.4729   ms
+n_step: 31   sim time:  0.0079216   sim timestep: 2.5554e-04  timestep time =   986.711 ms   total time =  125.9929 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.5810  max:  827.9259  avg:  801.1065   ms
+ Time Hydro               min:  853.1001  max:  856.4818  avg:  854.4526   ms
+ Time Boundaries          min:   52.3570  max:  123.7299  avg:   98.6789   ms
+ Time Total               min:  980.7591  max:  980.8741  avg:  980.8185   ms
+n_step: 32   sim time:  0.0081772   sim timestep: 2.5554e-04  timestep time =   981.058 ms   total time =  126.9842 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.3440  max:  827.3520  avg:  801.0801   ms
+ Time Hydro               min:  852.5929  max:  856.1900  avg:  853.8753   ms
+ Time Boundaries          min:   52.3670  max:  124.6512  avg:   99.0165   ms
+ Time Total               min:  981.3979  max:  981.5130  avg:  981.4524   ms
+n_step: 33   sim time:  0.0084327   sim timestep: 2.5554e-04  timestep time =   981.686 ms   total time =  127.9759 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.9858  max:  826.8809  avg:  801.1382   ms
+ Time Hydro               min:  852.0849  max:  855.4010  avg:  853.3580   ms
+ Time Boundaries          min:   53.4160  max:  127.3510  avg:   99.7369   ms
+ Time Total               min:  983.4502  max:  983.7921  avg:  983.7318   ms
+n_step: 34   sim time:  0.0086882   sim timestep: 2.5554e-04  timestep time =   983.970 ms   total time =  128.9700 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.2111  max:  828.9881  avg:  801.1786   ms
+ Time Hydro               min:  854.2559  max:  857.6379  avg:  855.5044   ms
+ Time Boundaries          min:   51.1761  max:  124.7520  avg:   98.2701   ms
+ Time Total               min:  982.9509  max:  983.0670  avg:  983.0025   ms
+n_step: 35   sim time:  0.0089438   sim timestep: 2.5554e-04  timestep time =   983.234 ms   total time =  129.9634 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.9510  max:  827.0211  avg:  801.2286   ms
+ Time Hydro               min:  852.3610  max:  855.8340  avg:  853.5455   ms
+ Time Boundaries          min:   51.8000  max:  124.2731  avg:   98.6094   ms
+ Time Total               min:  980.6850  max:  980.7770  avg:  980.7310   ms
+n_step: 36   sim time:  0.0091993   sim timestep: 2.5554e-04  timestep time =   980.981 ms   total time =  130.9546 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.6338  max:  830.0240  avg:  801.2420   ms
+ Time Hydro               min:  855.2780  max:  858.7930  avg:  856.5477   ms
+ Time Boundaries          min:   54.0779  max:  124.8720  avg:  100.7555   ms
+ Time Total               min:  984.2429  max:  984.2980  avg:  984.2703   ms
+n_step: 37   sim time:  0.0094548   sim timestep: 2.5554e-04  timestep time =   984.510 ms   total time =  131.9492 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.9031  max:  827.9440  avg:  801.2712   ms
+ Time Hydro               min:  853.2450  max:  856.6301  avg:  854.4766   ms
+ Time Boundaries          min:   54.2002  max:  125.0761  avg:  100.5207   ms
+ Time Total               min:  982.2662  max:  982.3260  avg:  982.3082   ms
+n_step: 38   sim time:  0.0097104   sim timestep: 2.5554e-04  timestep time =   982.549 ms   total time =  132.9420 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.4970  max:  827.2741  avg:  801.3050   ms
+ Time Hydro               min:  852.5951  max:  856.1080  avg:  853.8054   ms
+ Time Boundaries          min:   54.0369  max:  124.5711  avg:  100.4355   ms
+ Time Total               min:  981.2539  max:  981.3030  avg:  981.2831   ms
+n_step: 39   sim time:  0.0099659   sim timestep: 2.5554e-04  timestep time =   981.515 ms   total time =  133.9337 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.0621  max:  827.1899  avg:  801.2976   ms
+ Time Hydro               min:  852.5128  max:  855.9971  avg:  853.8509   ms
+ Time Boundaries          min:   52.1262  max:  124.2890  avg:   99.1678   ms
+ Time Total               min:  980.8590  max:  980.9179  avg:  980.8992   ms
+n_step: 40   sim time:  0.0102215   sim timestep: 2.5554e-04  timestep time =   981.137 ms   total time =  134.9250 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.6799  max:  827.5611  avg:  801.2847   ms
+ Time Hydro               min:  852.8590  max:  856.1630  avg:  854.0887   ms
+ Time Boundaries          min:   52.2039  max:  125.1130  avg:   99.1080   ms
+ Time Total               min:  981.8559  max:  981.9059  avg:  981.8909   ms
+n_step: 41   sim time:  0.0104770   sim timestep: 2.5554e-04  timestep time =   982.131 ms   total time =  135.9173 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.6770  max:  828.0709  avg:  801.3559   ms
+ Time Hydro               min:  853.3690  max:  857.1479  avg:  854.5979   ms
+ Time Boundaries          min:   52.8049  max:  125.0250  avg:   99.4399   ms
+ Time Total               min:  982.7409  max:  982.8031  avg:  982.7831   ms
+n_step: 42   sim time:  0.0107325   sim timestep: 2.5554e-04  timestep time =   983.018 ms   total time =  136.9105 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.9040  max:  827.9030  avg:  801.3835   ms
+ Time Hydro               min:  853.1930  max:  856.5590  avg:  854.4322   ms
+ Time Boundaries          min:   52.1660  max:  125.0582  avg:   99.2504   ms
+ Time Total               min:  982.1959  max:  982.2462  avg:  982.2292   ms
+n_step: 43   sim time:  0.0109881   sim timestep: 2.5554e-04  timestep time =   982.473 ms   total time =  137.9030 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.5640  max:  827.4519  avg:  801.3864   ms
+ Time Hydro               min:  852.6220  max:  856.6320  avg:  853.9807   ms
+ Time Boundaries          min:   52.1951  max:  126.1361  avg:   98.9590   ms
+ Time Total               min:  983.3388  max:  983.3832  avg:  983.3663   ms
+n_step: 44   sim time:  0.0112436   sim timestep: 2.5554e-04  timestep time =   983.604 ms   total time =  138.8968 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.0540  max:  827.5380  avg:  801.4369   ms
+ Time Hydro               min:  852.7470  max:  856.1261  avg:  854.0717   ms
+ Time Boundaries          min:   53.8568  max:  126.9419  avg:  100.8057   ms
+ Time Total               min:  983.6488  max:  983.6900  avg:  983.6744   ms
+n_step: 45   sim time:  0.0114991   sim timestep: 2.5554e-04  timestep time =   983.916 ms   total time =  139.8908 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.1620  max:  827.3871  avg:  801.4298   ms
+ Time Hydro               min:  852.6280  max:  856.2121  avg:  853.9153   ms
+ Time Boundaries          min:   52.9258  max:  126.7190  avg:  100.3826   ms
+ Time Total               min:  983.5050  max:  983.5560  avg:  983.5368   ms
+n_step: 46   sim time:  0.0117547   sim timestep: 2.5554e-04  timestep time =   983.777 ms   total time =  140.8848 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.8418  max:  827.1530  avg:  801.4769   ms
+ Time Hydro               min:  852.4411  max:  855.9420  avg:  853.6773   ms
+ Time Boundaries          min:   53.6940  max:  124.6281  avg:   99.5925   ms
+ Time Total               min:  981.1521  max:  981.1971  avg:  981.1804   ms
+n_step: 47   sim time:  0.0120102   sim timestep: 2.5554e-04  timestep time =   981.419 ms   total time =  141.8763 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.4788  max:  828.3012  avg:  801.5478   ms
+ Time Hydro               min:  853.4801  max:  856.8058  avg:  854.8269   ms
+ Time Boundaries          min:   52.7039  max:  125.6628  avg:   99.9427   ms
+ Time Total               min:  983.0718  max:  983.1109  avg:  983.0909   ms
+n_step: 48   sim time:  0.0122657   sim timestep: 2.5554e-04  timestep time =   983.329 ms   total time =  142.8698 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.6379  max:  827.4190  avg:  801.5172   ms
+ Time Hydro               min:  852.7529  max:  856.0050  avg:  853.9483   ms
+ Time Boundaries          min:   53.3552  max:  127.0261  avg:   99.8493   ms
+ Time Total               min:  983.6271  max:  983.6671  avg:  983.6484   ms
+n_step: 49   sim time:  0.0125213   sim timestep: 2.5554e-04  timestep time =   983.887 ms   total time =  143.8639 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.8609  max:  827.7750  avg:  801.5709   ms
+ Time Hydro               min:  853.0941  max:  856.3960  avg:  854.3097   ms
+ Time Boundaries          min:   53.3199  max:  125.0210  avg:   99.6310   ms
+ Time Total               min:  982.0070  max:  982.0418  avg:  982.0252   ms
+n_step: 50   sim time:  0.0127768   sim timestep: 2.5554e-04  timestep time =   982.263 ms   total time =  144.8564 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.1291  max:  827.3590  avg:  801.5958   ms
+ Time Hydro               min:  852.6149  max:  855.9740  avg:  853.8913   ms
+ Time Boundaries          min:   51.9562  max:  123.4100  avg:   98.6220   ms
+ Time Total               min:  979.9731  max:  980.0091  avg:  979.9917   ms
+n_step: 51   sim time:  0.0130324   sim timestep: 2.5554e-04  timestep time =   980.231 ms   total time =  145.8468 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.1200  max:  828.8450  avg:  801.5923   ms
+ Time Hydro               min:  854.1300  max:  857.3790  avg:  855.3762   ms
+ Time Boundaries          min:   53.8640  max:  125.1979  avg:   99.5279   ms
+ Time Total               min:  983.1541  max:  983.2001  avg:  983.1798   ms
+n_step: 52   sim time:  0.0132879   sim timestep: 2.5554e-04  timestep time =   983.425 ms   total time =  146.8404 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.0389  max:  828.5649  avg:  801.6727   ms
+ Time Hydro               min:  853.7819  max:  857.2140  avg:  855.0999   ms
+ Time Boundaries          min:   53.1449  max:  126.1811  avg:  100.7275   ms
+ Time Total               min:  983.9730  max:  984.0131  avg:  983.9986   ms
+n_step: 53   sim time:  0.0135434   sim timestep: 2.5554e-04  timestep time =   984.238 ms   total time =  147.8348 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.2380  max:  827.6532  avg:  801.6851   ms
+ Time Hydro               min:  852.9279  max:  856.5841  avg:  854.1877   ms
+ Time Boundaries          min:   51.2700  max:  125.8602  avg:   98.9956   ms
+ Time Total               min:  983.0179  max:  983.0692  avg:  983.0502   ms
+n_step: 54   sim time:  0.0137990   sim timestep: 2.5554e-04  timestep time =   983.289 ms   total time =  148.8282 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.4980  max:  830.3981  avg:  801.6575   ms
+ Time Hydro               min:  855.7332  max:  859.0720  avg:  856.9423   ms
+ Time Boundaries          min:   53.3981  max:  125.8872  avg:  100.4383   ms
+ Time Total               min:  985.5340  max:  985.5890  avg:  985.5686   ms
+n_step: 55   sim time:  0.0140545   sim timestep: 2.5554e-04  timestep time =   985.814 ms   total time =  149.8243 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.9150  max:  828.0699  avg:  801.7258   ms
+ Time Hydro               min:  853.3170  max:  857.0449  avg:  854.5950   ms
+ Time Boundaries          min:   51.6040  max:  125.5159  avg:   98.6090   ms
+ Time Total               min:  983.1300  max:  983.1841  avg:  983.1661   ms
+n_step: 56   sim time:  0.0143100   sim timestep: 2.5554e-04  timestep time =   983.400 ms   total time =  150.8179 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.9910  max:  828.2881  avg:  801.7681   ms
+ Time Hydro               min:  853.5371  max:  856.9489  avg:  854.8180   ms
+ Time Boundaries          min:   53.0071  max:  124.9650  avg:  100.7831   ms
+ Time Total               min:  982.6100  max:  982.6670  avg:  982.6467   ms
+n_step: 57   sim time:  0.0145656   sim timestep: 2.5554e-04  timestep time =   982.880 ms   total time =  151.8110 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.0559  max:  827.8689  avg:  801.7859   ms
+ Time Hydro               min:  853.1981  max:  856.5068  avg:  854.3962   ms
+ Time Boundaries          min:   52.3708  max:  124.1479  avg:   99.2035   ms
+ Time Total               min:  981.2241  max:  981.2880  avg:  981.2570   ms
+n_step: 58   sim time:  0.0148211   sim timestep: 2.5554e-04  timestep time =   981.498 ms   total time =  152.8026 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.2130  max:  828.1279  avg:  801.8212   ms
+ Time Hydro               min:  853.3580  max:  856.8099  avg:  854.6629   ms
+ Time Boundaries          min:   52.3870  max:  125.1779  avg:   99.5722   ms
+ Time Total               min:  982.5780  max:  982.6419  avg:  982.6078   ms
+n_step: 59   sim time:  0.0150766   sim timestep: 2.5554e-04  timestep time =   982.850 ms   total time =  153.7958 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.2860  max:  827.5170  avg:  801.8179   ms
+ Time Hydro               min:  852.7570  max:  856.1480  avg:  854.0533   ms
+ Time Boundaries          min:   52.4261  max:  125.8640  avg:   99.7761   ms
+ Time Total               min:  982.5699  max:  982.6441  avg:  982.6103   ms
+n_step: 60   sim time:  0.0153322   sim timestep: 2.5554e-04  timestep time =   982.850 ms   total time =  154.7887 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.4730  max:  827.8360  avg:  801.8757   ms
+ Time Hydro               min:  853.1332  max:  856.4780  avg:  854.3714   ms
+ Time Boundaries          min:   53.4880  max:  124.0671  avg:   99.4087   ms
+ Time Total               min:  981.1130  max:  981.1771  avg:  981.1500   ms
+n_step: 61   sim time:  0.0155877   sim timestep: 2.5554e-04  timestep time =   981.389 ms   total time =  155.7803 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.0080  max:  827.1101  avg:  801.8731   ms
+ Time Hydro               min:  852.3152  max:  855.7971  avg:  853.6453   ms
+ Time Boundaries          min:   53.0839  max:  125.5341  avg:   99.6314   ms
+ Time Total               min:  981.9069  max:  981.9782  avg:  981.9445   ms
+n_step: 62   sim time:  0.0158433   sim timestep: 2.5554e-04  timestep time =   982.184 ms   total time =  156.7727 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  774.9710  max:  828.4171  avg:  801.8941   ms
+ Time Hydro               min:  853.7011  max:  857.2650  avg:  854.9519   ms
+ Time Boundaries          min:   52.9630  max:  126.9569  avg:  100.3526   ms
+ Time Total               min:  984.8070  max:  984.8750  avg:  984.8378   ms
+n_step: 63   sim time:  0.0160988   sim timestep: 2.5554e-04  timestep time =   985.075 ms   total time =  157.7680 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.0561  max:  828.4349  avg:  801.8978   ms
+ Time Hydro               min:  853.7362  max:  857.2149  avg:  854.9660   ms
+ Time Boundaries          min:   52.8769  max:  124.3742  avg:   99.9821   ms
+ Time Total               min:  982.1658  max:  982.2412  avg:  982.2081   ms
+n_step: 64   sim time:  0.0163543   sim timestep: 2.5554e-04  timestep time =   982.444 ms   total time =  158.7605 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.9120  max:  828.9340  avg:  801.9768   ms
+ Time Hydro               min:  854.0850  max:  857.5969  avg:  855.4686   ms
+ Time Boundaries          min:   53.2901  max:  124.2669  avg:   99.6162   ms
+ Time Total               min:  982.4350  max:  982.5110  avg:  982.4726   ms
+n_step: 65   sim time:  0.0166099   sim timestep: 2.5554e-04  timestep time =   982.711 ms   total time =  159.7534 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.7058  max:  827.3261  avg:  801.9679   ms
+ Time Hydro               min:  852.6049  max:  855.8931  avg:  853.8679   ms
+ Time Boundaries          min:   53.9749  max:  126.4851  avg:   99.9680   ms
+ Time Total               min:  982.9440  max:  983.0239  avg:  982.9888   ms
+n_step: 66   sim time:  0.0168654   sim timestep: 2.5554e-04  timestep time =   983.232 ms   total time =  160.7467 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.6131  max:  827.6780  avg:  801.9834   ms
+ Time Hydro               min:  852.8519  max:  856.4410  avg:  854.2119   ms
+ Time Boundaries          min:   52.9420  max:  125.0920  avg:   99.5196   ms
+ Time Total               min:  982.0940  max:  982.1720  avg:  982.1393   ms
+n_step: 67   sim time:  0.0171209   sim timestep: 2.5554e-04  timestep time =   982.376 ms   total time =  161.7392 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.3508  max:  827.5621  avg:  802.0145   ms
+ Time Hydro               min:  852.7482  max:  856.3180  avg:  854.1012   ms
+ Time Boundaries          min:   53.2439  max:  124.2402  avg:   98.7876   ms
+ Time Total               min:  981.1261  max:  981.2062  avg:  981.1803   ms
+n_step: 68   sim time:  0.0173765   sim timestep: 2.5554e-04  timestep time =   981.416 ms   total time =  162.7308 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.8422  max:  828.0771  avg:  802.0350   ms
+ Time Hydro               min:  853.2312  max:  856.7269  avg:  854.6122   ms
+ Time Boundaries          min:   53.7589  max:  124.6130  avg:   99.6650   ms
+ Time Total               min:  981.9150  max:  981.9751  avg:  981.9563   ms
+n_step: 69   sim time:  0.0176320   sim timestep: 2.5554e-04  timestep time =   982.197 ms   total time =  163.7231 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.8541  max:  827.5580  avg:  802.0817   ms
+ Time Hydro               min:  852.8991  max:  856.2739  avg:  854.0911   ms
+ Time Boundaries          min:   54.3430  max:  125.9041  avg:   99.7351   ms
+ Time Total               min:  982.7361  max:  982.8019  avg:  982.7791   ms
+n_step: 70   sim time:  0.0178875   sim timestep: 2.5554e-04  timestep time =   983.012 ms   total time =  164.7162 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.3141  max:  828.9959  avg:  802.1197   ms
+ Time Hydro               min:  854.2190  max:  857.6932  avg:  855.5294   ms
+ Time Boundaries          min:   52.8839  max:  123.7252  avg:   99.6399   ms
+ Time Total               min:  981.9958  max:  982.0571  avg:  982.0378   ms
+n_step: 71   sim time:  0.0181431   sim timestep: 2.5554e-04  timestep time =   982.268 ms   total time =  165.7086 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.9790  max:  827.7130  avg:  802.1065   ms
+ Time Hydro               min:  853.0180  max:  856.3690  avg:  854.2486   ms
+ Time Boundaries          min:   51.2919  max:  121.9511  avg:   98.9531   ms
+ Time Total               min:  978.8849  max:  978.9450  avg:  978.9263   ms
+n_step: 72   sim time:  0.0183986   sim timestep: 2.5554e-04  timestep time =   979.162 ms   total time =  166.6979 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.1192  max:  827.8699  avg:  802.1037   ms
+ Time Hydro               min:  853.1699  max:  856.6391  avg:  854.4069   ms
+ Time Boundaries          min:   52.2039  max:  125.4971  avg:   99.5109   ms
+ Time Total               min:  982.6980  max:  982.7631  avg:  982.7442   ms
+n_step: 73   sim time:  0.0186542   sim timestep: 2.5554e-04  timestep time =   982.982 ms   total time =  167.6911 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.6872  max:  827.6050  avg:  802.1504   ms
+ Time Hydro               min:  852.7930  max:  856.4200  avg:  854.1421   ms
+ Time Boundaries          min:   51.5800  max:  123.1561  avg:   98.6255   ms
+ Time Total               min:  980.1528  max:  980.2010  avg:  980.1825   ms
+n_step: 74   sim time:  0.0189097   sim timestep: 2.5554e-04  timestep time =   980.426 ms   total time =  168.6818 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.8269  max:  829.2489  avg:  802.1849   ms
+ Time Hydro               min:  854.5310  max:  858.1610  avg:  855.7904   ms
+ Time Boundaries          min:   52.4302  max:  126.0018  avg:   99.6060   ms
+ Time Total               min:  984.7400  max:  984.7879  avg:  984.7686   ms
+n_step: 75   sim time:  0.0191652   sim timestep: 2.5554e-04  timestep time =   984.994 ms   total time =  169.6771 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.4690  max:  827.9030  avg:  802.1824   ms
+ Time Hydro               min:  853.2062  max:  856.4291  avg:  854.4358   ms
+ Time Boundaries          min:   54.4741  max:  127.2280  avg:  100.1455   ms
+ Time Total               min:  984.2341  max:  984.3030  avg:  984.2666   ms
+n_step: 76   sim time:  0.0194208   sim timestep: 2.5554e-04  timestep time =   984.506 ms   total time =  170.6716 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.1519  max:  827.4360  avg:  802.2544   ms
+ Time Hydro               min:  852.7560  max:  856.1180  avg:  853.9750   ms
+ Time Boundaries          min:   52.7480  max:  123.9781  avg:   99.4464   ms
+ Time Total               min:  980.6950  max:  980.7601  avg:  980.7242   ms
+n_step: 77   sim time:  0.0196763   sim timestep: 2.5554e-04  timestep time =   980.966 ms   total time =  171.6627 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.4990  max:  828.9480  avg:  802.2518   ms
+ Time Hydro               min:  854.2900  max:  857.7540  avg:  855.4813   ms
+ Time Boundaries          min:   51.9822  max:  124.5110  avg:   98.9123   ms
+ Time Total               min:  982.8432  max:  982.9099  avg:  982.8763   ms
+n_step: 78   sim time:  0.0199318   sim timestep: 2.5554e-04  timestep time =   983.115 ms   total time =  172.6560 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.8550  max:  828.0661  avg:  802.2699   ms
+ Time Hydro               min:  853.4000  max:  856.7841  avg:  854.6063   ms
+ Time Boundaries          min:   52.1309  max:  126.0080  avg:   98.9980   ms
+ Time Total               min:  983.3579  max:  983.4361  avg:  983.3928   ms
+n_step: 79   sim time:  0.0201874   sim timestep: 2.5554e-04  timestep time =   983.623 ms   total time =  173.6497 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.3429  max:  830.3161  avg:  802.2960   ms
+ Time Hydro               min:  855.6449  max:  859.2472  avg:  856.8523   ms
+ Time Boundaries          min:   53.9632  max:  125.2289  avg:   99.7438   ms
+ Time Total               min:  985.0471  max:  985.1220  avg:  985.0790   ms
+n_step: 80   sim time:  0.0204429   sim timestep: 2.5554e-04  timestep time =   985.318 ms   total time =  174.6451 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.5212  max:  828.6009  avg:  802.2893   ms
+ Time Hydro               min:  853.8761  max:  857.3020  avg:  855.1437   ms
+ Time Boundaries          min:   53.7491  max:  126.2259  avg:   99.8327   ms
+ Time Total               min:  984.1030  max:  984.1740  avg:  984.1367   ms
+n_step: 81   sim time:  0.0206984   sim timestep: 2.5554e-04  timestep time =   984.371 ms   total time =  175.6397 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.8621  max:  828.8019  avg:  802.3130   ms
+ Time Hydro               min:  854.0878  max:  857.4362  avg:  855.3443   ms
+ Time Boundaries          min:   56.6671  max:  127.0468  avg:  103.2509   ms
+ Time Total               min:  985.0800  max:  985.1301  avg:  985.1017   ms
+n_step: 82   sim time:  0.0209540   sim timestep: 2.5554e-04  timestep time =   985.338 ms   total time =  176.6352 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.9279  max:  827.2412  avg:  802.3498   ms
+ Time Hydro               min:  852.5171  max:  856.0390  avg:  853.7898   ms
+ Time Boundaries          min:   52.1410  max:  124.4080  avg:   98.5301   ms
+ Time Total               min:  981.0219  max:  981.0638  avg:  981.0472   ms
+n_step: 83   sim time:  0.0212095   sim timestep: 2.5554e-04  timestep time =   981.286 ms   total time =  177.6266 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.8710  max:  828.6769  avg:  802.3283   ms
+ Time Hydro               min:  853.9231  max:  857.4100  avg:  855.2152   ms
+ Time Boundaries          min:   51.6880  max:  124.6290  avg:   98.7404   ms
+ Time Total               min:  982.6288  max:  982.6741  avg:  982.6542   ms
+n_step: 84   sim time:  0.0214651   sim timestep: 2.5554e-04  timestep time =   982.889 ms   total time =  178.6198 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.7692  max:  827.9960  avg:  802.3654   ms
+ Time Hydro               min:  853.3471  max:  856.7719  avg:  854.5319   ms
+ Time Boundaries          min:   51.6870  max:  123.5330  avg:   98.2621   ms
+ Time Total               min:  980.8879  max:  980.9291  avg:  980.9122   ms
+n_step: 85   sim time:  0.0217206   sim timestep: 2.5554e-04  timestep time =   981.142 ms   total time =  179.6110 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.6979  max:  828.6800  avg:  802.3927   ms
+ Time Hydro               min:  853.6849  max:  857.2919  avg:  855.2213   ms
+ Time Boundaries          min:   52.8131  max:  125.2639  avg:  100.6043   ms
+ Time Total               min:  983.1569  max:  984.6170  avg:  984.5974   ms
+n_step: 86   sim time:  0.0219761   sim timestep: 2.5554e-04  timestep time =   984.838 ms   total time =  180.6060 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.7730  max:  827.6000  avg:  802.4252   ms
+ Time Hydro               min:  852.8690  max:  856.3161  avg:  854.1445   ms
+ Time Boundaries          min:   53.1561  max:  125.7579  avg:  100.4170   ms
+ Time Total               min:  982.6369  max:  982.6970  avg:  982.6792   ms
+n_step: 87   sim time:  0.0222317   sim timestep: 2.5554e-04  timestep time =   982.915 ms   total time =  181.5991 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.0649  max:  827.6782  avg:  802.4453   ms
+ Time Hydro               min:  852.9370  max:  856.4589  avg:  854.2187   ms
+ Time Boundaries          min:   53.4298  max:  126.4050  avg:   99.1512   ms
+ Time Total               min:  983.4371  max:  983.5000  avg:  983.4777   ms
+n_step: 88   sim time:  0.0224872   sim timestep: 2.5554e-04  timestep time =   983.720 ms   total time =  182.5930 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.7081  max:  828.5410  avg:  802.3868   ms
+ Time Hydro               min:  853.8749  max:  857.1310  avg:  855.0847   ms
+ Time Boundaries          min:   53.7560  max:  123.6820  avg:   99.7449   ms
+ Time Total               min:  981.3840  max:  981.4360  avg:  981.4190   ms
+n_step: 89   sim time:  0.0227427   sim timestep: 2.5554e-04  timestep time =   981.660 ms   total time =  183.5846 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.5381  max:  827.3191  avg:  802.4135   ms
+ Time Hydro               min:  852.7501  max:  856.2491  avg:  854.0304   ms
+ Time Boundaries          min:   52.5081  max:  126.0641  avg:  100.2956   ms
+ Time Total               min:  982.8789  max:  982.9412  avg:  982.9215   ms
+n_step: 90   sim time:  0.0229983   sim timestep: 2.5554e-04  timestep time =   983.162 ms   total time =  184.5779 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.5689  max:  828.8271  avg:  802.4334   ms
+ Time Hydro               min:  853.9610  max:  857.6500  avg:  855.3646   ms
+ Time Boundaries          min:   53.2620  max:  125.9670  avg:  100.3095   ms
+ Time Total               min:  984.1812  max:  984.2422  avg:  984.2229   ms
+n_step: 91   sim time:  0.0232538   sim timestep: 2.5554e-04  timestep time =   984.455 ms   total time =  185.5726 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.0160  max:  829.1321  avg:  802.4669   ms
+ Time Hydro               min:  854.4409  max:  858.2041  avg:  855.6780   ms
+ Time Boundaries          min:   52.9971  max:  124.0399  avg:   99.2403   ms
+ Time Total               min:  982.8160  max:  982.8730  avg:  982.8533   ms
+n_step: 92   sim time:  0.0235093   sim timestep: 2.5554e-04  timestep time =   983.094 ms   total time =  186.5658 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.3259  max:  827.6601  avg:  802.4372   ms
+ Time Hydro               min:  852.9592  max:  856.4320  avg:  854.2014   ms
+ Time Boundaries          min:   54.4219  max:  126.6911  avg:  101.2524   ms
+ Time Total               min:  983.7070  max:  983.7530  avg:  983.7351   ms
+n_step: 93   sim time:  0.0237649   sim timestep: 2.5554e-04  timestep time =   983.974 ms   total time =  187.5600 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  775.9840  max:  829.4551  avg:  802.4635   ms
+ Time Hydro               min:  854.6932  max:  858.3138  avg:  855.9991   ms
+ Time Boundaries          min:   53.8702  max:  127.2280  avg:  100.6208   ms
+ Time Total               min:  986.1069  max:  986.1572  avg:  986.1378   ms
+n_step: 94   sim time:  0.0240204   sim timestep: 2.5554e-04  timestep time =   986.373 ms   total time =  188.5565 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.7050  max:  828.7981  avg:  802.4307   ms
+ Time Hydro               min:  854.0981  max:  857.5559  avg:  855.3417   ms
+ Time Boundaries          min:   54.9669  max:  128.2060  avg:  102.0054   ms
+ Time Total               min:  986.3369  max:  986.3832  avg:  986.3642   ms
+n_step: 95   sim time:  0.0242760   sim timestep: 2.5554e-04  timestep time =   986.604 ms   total time =  189.5533 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.6371  max:  828.6180  avg:  802.4638   ms
+ Time Hydro               min:  853.9488  max:  857.6000  avg:  855.1597   ms
+ Time Boundaries          min:   53.0121  max:  124.1629  avg:   99.3896   ms
+ Time Total               min:  982.3341  max:  982.3849  avg:  982.3653   ms
+n_step: 96   sim time:  0.0245315   sim timestep: 2.5554e-04  timestep time =   982.598 ms   total time =  190.5460 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.6321  max:  828.9628  avg:  802.5086   ms
+ Time Hydro               min:  853.4000  max:  857.7991  avg:  855.5075   ms
+ Time Boundaries          min:   54.1201  max:  125.1872  avg:  100.2467   ms
+ Time Total               min:  983.5770  max:  984.2799  avg:  984.2660   ms
+n_step: 97   sim time:  0.0247870   sim timestep: 2.5554e-04  timestep time =   984.502 ms   total time =  191.5406 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.3841  max:  828.5151  avg:  802.5032   ms
+ Time Hydro               min:  853.8809  max:  857.2330  avg:  855.0546   ms
+ Time Boundaries          min:   52.6888  max:  124.0571  avg:   99.7543   ms
+ Time Total               min:  981.8711  max:  981.9231  avg:  981.9042   ms
+n_step: 98   sim time:  0.0250426   sim timestep: 2.5554e-04  timestep time =   982.134 ms   total time =  192.5329 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.2539  max:  828.7301  avg:  802.5340   ms
+ Time Hydro               min:  853.9732  max:  857.6050  avg:  855.2705   ms
+ Time Boundaries          min:   55.5780  max:  128.2141  avg:  102.9089   ms
+ Time Total               min:  986.3989  max:  986.4450  avg:  986.4261   ms
+n_step: 99   sim time:  0.0252981   sim timestep: 2.5554e-04  timestep time =   986.658 ms   total time =  193.5297 s
+
+Global maximum magnetic divergence = 0.0000e+00
+Percentage of GPU memory used: 99.67%.0 GPU memory used 68479368192, GPU total memory 68702699520
+ Time Hydro_Integrator    min:  776.9110  max:  829.0901  avg:  802.5707   ms
+ Time Hydro               min:  855.1362  max:  859.0691  avg:  856.3480   ms
+ Time Boundaries          min:   50.9901  max:  123.0960  avg:   99.2021   ms
+ Time Total               min:  982.7378  max:  982.8079  avg:  982.7875   ms
+n_step: 100   sim time:  0.0255536   sim timestep: 2.5554e-04  timestep time =   983.032 ms   total time =  194.5229 s
+
+
+Average Times      n_steps:100
+ Time Hydro_Integrator    avg:  827.7719   ms
+ Time Hydro               avg:  856.6664   ms
+ Time Boundaries          avg:  125.3575   ms
+ Time Total               avg:  982.9072   ms
+Writing timing values to file: run_timing.log  
+ Creating File: run_timing.log 
+Saved Timing: run_timing.log 
+

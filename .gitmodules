@@ -22,3 +22,6 @@
 [submodule "data/2023-09-20-high-res-plmc-identify-bad-ranks/cholla"]
 	path = data/2023-09-20-high-res-plmc-identify-bad-ranks/cholla
 	url = https://github.com/bcaddy/cholla.git
+[submodule "data/2024-03-12-fused-plmc/cholla"]
+	path = data/2024-03-12-fused-plmc/cholla
+	url = git@github.com:bcaddy/cholla.git

@@ -1,0 +1,7 @@
+Git Commit Hash = 98822cbeb545c7cf223213b96f4652abbd1f75aa
+Macro Flags     = -DMPI_CHOLLA -DPRECISION=2 -DPLMC -DHLLD -DMHD -DVL -DDENSITY_FLOOR -DTEMPERATURE_FLOOR -DCPU_TIME  -DMPI_GPU -DDISABLE_GPU_ERROR_CHECKING -DN_STEPS_LIMIT=100 -DO_HIP -DGIT_HASH=98822cbeb545c7cf223213b96f4652abbd1f75aa
+Note that the timers all skip the first time step since it always takes longer.
+To find the average time divide the time shown by n_steps-1
+
+#n_proc  nx  ny  nz  n_omp  n_steps  Hydro_Integrator  Hydro  Boundaries  Total   
+64 1836 1836 1836 0 100 39780.2 41037.6 2044.05 43076.7 
