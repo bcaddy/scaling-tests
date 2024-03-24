@@ -28,3 +28,6 @@
 [submodule "data/2024-03-23-strong-scaling/cholla"]
 	path = data/2024-03-23-strong-scaling/cholla
 	url = git@github.com:bcaddy/cholla.git
+[submodule "data/2024-03-24-strong-scaling-456/cholla"]
+	path = data/2024-03-24-strong-scaling-456/cholla
+	url = git@github.com:bcaddy/cholla.git
