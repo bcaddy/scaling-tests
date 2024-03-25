@@ -19,16 +19,16 @@ To find the average time divide the time shown by n_steps-1
 1 459 459 459 0 6134 2.50876e+06 2.58294e+06 12025.2 2.59501e+06
 
 #                                          nx  ny  nz   n_cells
-# ranks_1:    Local number of grid cells: 459 459 459 101847563 speedup: 289.10, Strong Scaling Efficiency:   7.06%
-# ranks_2:    Local number of grid cells: 230 459 459  51905182 speedup: 277.16, Strong Scaling Efficiency:  13.53%
-# ranks_4:    Local number of grid cells: 230 230 459  26452748 speedup: 219.39, Strong Scaling Efficiency:  21.42%
-# ranks_8:    Local number of grid cells: 230 230 230  13481272 speedup: 174.66, Strong Scaling Efficiency:  34.11%
-# ranks_16:   Local number of grid cells: 115 230 230   6967212 speedup: 115.72, Strong Scaling Efficiency:  45.20%
-# ranks_32:   Local number of grid cells: 115 115 230   3600702 speedup:  72.11, Strong Scaling Efficiency:  56.33%
+# ranks_1:    Local number of grid cells: 459 459 459 101847563 speedup:   1.00, Strong Scaling Efficiency: 100.00%
+# ranks_2:    Local number of grid cells: 230 459 459  51905182 speedup:   1.88, Strong Scaling Efficiency:  93.99%
+# ranks_4:    Local number of grid cells: 230 230 459  26452748 speedup:   3.71, Strong Scaling Efficiency:  92.67%
+# ranks_8:    Local number of grid cells: 230 230 230  13481272 speedup:   7.23, Strong Scaling Efficiency:  90.41%
+# ranks_16:   Local number of grid cells: 115 230 230   6967212 speedup:  13.59, Strong Scaling Efficiency:  84.92%
+# ranks_32:   Local number of grid cells: 115 115 230   3600702 speedup:  25.41, Strong Scaling Efficiency:  79.41%
 # ranks_64:   Local number of grid cells: 115 115 115   1860867 speedup:  43.00, Strong Scaling Efficiency:  67.18%
-# ranks_128:  Local number of grid cells:  58 115 115    998514 speedup:  25.41, Strong Scaling Efficiency:  79.41%
-# ranks_256:  Local number of grid cells:  58  58 115    535788 speedup:  13.59, Strong Scaling Efficiency:  84.92%
-# ranks_512:  Local number of grid cells:  58  58  58    287496 speedup:   7.23, Strong Scaling Efficiency:  90.41%
-# ranks_1024: Local number of grid cells:  29  58  58    161172 speedup:   3.71, Strong Scaling Efficiency:  92.67%
-# ranks_2048: Local number of grid cells:  29  29  58     90354 speedup:   1.88, Strong Scaling Efficiency:  93.99%
-# ranks_4096: Local number of grid cells:  29  29  29     50653 speedup:   1.00, Strong Scaling Efficiency: 100.00%
+# ranks_128:  Local number of grid cells:  58 115 115    998514 speedup:  72.11, Strong Scaling Efficiency:  56.33%
+# ranks_256:  Local number of grid cells:  58  58 115    535788 speedup: 115.72, Strong Scaling Efficiency:  45.20%
+# ranks_512:  Local number of grid cells:  58  58  58    287496 speedup: 174.66, Strong Scaling Efficiency:  34.11%
+# ranks_1024: Local number of grid cells:  29  58  58    161172 speedup: 219.39, Strong Scaling Efficiency:  21.42%
+# ranks_2048: Local number of grid cells:  29  29  58     90354 speedup: 277.16, Strong Scaling Efficiency:  13.53%
+# ranks_4096: Local number of grid cells:  29  29  29     50653 speedup: 289.10, Strong Scaling Efficiency:   7.06%
