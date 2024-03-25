@@ -3,14 +3,26 @@ Macro Flags     = -DMPI_CHOLLA -DPRECISION=2 -DPLMC -DHLLD -DMHD -DVL -DDENSITY_
 Note that the timers all skip the first time step since it always takes longer.
 To find the average time divide the time shown by n_steps-1
 
-#n_proc  nx  ny  nz  n_omp  n_steps  Hydro_Integrator  Hydro  Boundaries  Total   
-512 456 456 456 0 6100 6660.01 7915.78 5111.98 14962.7 
-256 456 456 456 0 6100 12171.8 13378.4 7161.18 22217.3 
-128 456 456 456 0 6100 22555.6 23799.4 9521.39 34716.1 
-64 456 456 456 0 6100 42563.3 44186.2 14556 59818.6 
-32 456 456 456 0 6100 78456.1 80898.2 15724.2 97391.2 
-16 456 456 456 0 6100 141844 146216 20533.3 167219 
-8 456 456 456 0 6100 282126 290388 20097.1 310655 
-4 456 456 456 0 6100 549100 565956 21897.8 587962 
-2 456 456 456 0 6100 1.09951e+06 1.1342e+06 19782.7 1.15406e+06 
-1 456 456 456 0 6100 2.26217e+06 2.33298e+06 6144.72 2.33918e+06 
+#n_proc  nx  ny  nz  n_omp  n_steps  Hydro_Integrator  Hydro  Boundaries  Total
+512 456 456 456 0 6100 6660.01 7915.78 5111.98 14962.7
+256 456 456 456 0 6100 12171.8 13378.4 7161.18 22217.3
+128 456 456 456 0 6100 22555.6 23799.4 9521.39 34716.1
+64 456 456 456 0 6100 42563.3 44186.2 14556 59818.6
+32 456 456 456 0 6100 78456.1 80898.2 15724.2 97391.2
+16 456 456 456 0 6100 141844 146216 20533.3 167219
+8 456 456 456 0 6100 282126 290388 20097.1 310655
+4 456 456 456 0 6100 549100 565956 21897.8 587962
+2 456 456 456 0 6100 1.09951e+06 1.1342e+06 19782.7 1.15406e+06
+1 456 456 456 0 6100 2.26217e+06 2.33298e+06 6144.72 2.33918e+06
+
+#                                         nx  ny  nz  n_cells
+# ranks_1:   Local number of grid cells: 456 456 456 99897344
+# ranks_2:   Local number of grid cells: 228 456 456 50809856
+# ranks_4:   Local number of grid cells: 228 228 456 25842944
+# ranks_8:   Local number of grid cells: 228 228 228 13144256
+# ranks_16:  Local number of grid cells: 114 228 228  6794912
+# ranks_32:  Local number of grid cells: 114 114 228  3512624
+# ranks_64:  Local number of grid cells: 114 114 114  1815848
+# ranks_128: Local number of grid cells: 57  114 114   967460
+# ranks_256: Local number of grid cells: 57   57 114   515450
+# ranks_512: Local number of grid cells: 57   57  57   274625
